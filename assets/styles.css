@@ -43,8 +43,8 @@ body {
   color: var(--ink);
   background: var(--bg);
   font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 17px;
+  line-height: 1.6;
   letter-spacing: -.01em;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
@@ -140,10 +140,79 @@ dd { margin: 5px 0 0; font-size: 13px; }
 }
 .strength-strip i { color: var(--accent); font-style: normal; }
 
-.work, .capabilities, .evidence, .research, .about { padding-block: clamp(100px, 13vw, 176px); }
+.work, .capabilities, .evidence, .research, .about {
+  position: relative; isolation: isolate; padding-block: clamp(100px, 13vw, 176px);
+  clip-path: inset(0 -100vmax);
+}
+
+/* Each portfolio area has a restrained identity while remaining part of one system. */
+.work {
+  --accent: #31a7dd; --accent-strong: #78cfff; --accent-ink: #061820;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 9%, var(--bg)) 0%, var(--bg) 54%);
+  box-shadow: 0 0 0 100vmax color-mix(in srgb, var(--accent) 4%, var(--bg));
+}
+.capabilities {
+  --accent: #38b78a; --accent-strong: #70dbac; --accent-ink: #061811;
+  background: linear-gradient(225deg, color-mix(in srgb, var(--accent) 9%, var(--bg-raised)) 0%, var(--bg-raised) 58%);
+  box-shadow: 0 0 0 100vmax color-mix(in srgb, var(--accent) 4%, var(--bg-raised));
+}
+.evidence {
+  --accent: #9a7cf5; --accent-strong: #c1adff; --accent-ink: #150d2c;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--bg)) 0%, var(--bg) 62%);
+  box-shadow: 0 0 0 100vmax color-mix(in srgb, var(--accent) 4%, var(--bg));
+}
+.research {
+  --accent: #c99438; --accent-strong: #f0c86d; --accent-ink: #1d1304;
+  background: linear-gradient(225deg, color-mix(in srgb, var(--accent) 10%, var(--bg-raised)) 0%, var(--bg-raised) 62%);
+  box-shadow: 0 0 0 100vmax color-mix(in srgb, var(--accent) 4%, var(--bg-raised));
+}
+.about {
+  --accent: #d77482; --accent-strong: #f0a6af; --accent-ink: #250b10;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--bg)) 0%, var(--bg) 60%);
+  box-shadow: 0 0 0 100vmax color-mix(in srgb, var(--accent) 4%, var(--bg));
+}
+
+html[data-theme="light"] .work { --accent: #0877b2; --accent-strong: #075c8d; --accent-ink: #fff; background: #f0f8fc; box-shadow: 0 0 0 100vmax #f0f8fc; }
+html[data-theme="light"] .capabilities { --accent: #147a5a; --accent-strong: #0e6045; --accent-ink: #fff; background: #f0faf5; box-shadow: 0 0 0 100vmax #f0faf5; }
+html[data-theme="light"] .evidence { --accent: #6950bc; --accent-strong: #503998; --accent-ink: #fff; background: #f6f3ff; box-shadow: 0 0 0 100vmax #f6f3ff; }
+html[data-theme="light"] .research { --accent: #9a6712; --accent-strong: #714a0c; --accent-ink: #fff; background: #fff8e8; box-shadow: 0 0 0 100vmax #fff8e8; }
+html[data-theme="light"] .about { --accent: #af4656; --accent-strong: #8e3441; --accent-ink: #fff; background: #fff4f5; box-shadow: 0 0 0 100vmax #fff4f5; }
+
+/* Legibility pass: small supporting text is intentionally compact, never microscopic. */
+.brand-copy small { font-size: 9px; }
+.main-nav a { font-size: 13px; }
+.text-button, .key-button { font-size: 10px; }
+.eyebrow { font-size: 10px; }
+.role-list span { font-size: 10px; }
+.brief-head, .preview-chrome, .direction-head { font-size: 9px; }
+dt { font-size: 9px; }
+dd { font-size: 14px; }
+.brief-note { font-size: 14px; }
+.strength-strip { font-size: 10px; }
+.section-heading > p { font-size: 18px; line-height: 1.55; }
+.project-number, .capability-map article > span, .evidence-list li > span, .note-index, .build-story li > span { font-size: 10px; }
+.project-row strong { font-size: 18px; }
+.project-row small { font-size: 13px; }
+.status { font-size: 9px; }
+.preview-meta { font-size: 9px; }
+.architecture { font-size: 10px; }
+.preview-footer { font-size: 9px; }
+.capability-map h3 { font-size: 24px; }
+.capability-map li { font-size: 9px; }
+.evidence-list strong { font-size: 16px; }
+.evidence-list p { font-size: 14px; }
+.evidence-list b { font-size: 9px; }
+.filter-button { font-size: 10px; }
+#result-count { font-size: 10px; }
+.note-meta { font-size: 10px; }
+.note-open { font-size: 10px; }
+.direction-card > p, .site-footer p { font-size: 14px; }
+.footer-meta, .back-top { font-size: 9px; }
+#dialog-content .report-link, #dialog-content .note-visual-frame figcaption, #dialog-content .boundary, .command-shell header { font-size: 10px; }
+.command-shell > p { font-size: 9px; }
 .section-heading { display: grid; grid-template-columns: 1fr minmax(270px, 410px); align-items: end; gap: 48px; margin-bottom: clamp(56px, 7vw, 92px); }
 .section-heading h2, .about h2 { margin: 14px 0 0; font-family: var(--display); font-size: clamp(44px, 5.5vw, 76px); font-weight: 600; letter-spacing: -.055em; line-height: 1; }
-.section-heading > p { margin: 0; color: var(--muted); font-size: 16px; }
+.section-heading > p { margin: 0; color: var(--muted); font-size: 18px; line-height: 1.55; }
 
 .project-lab { display: grid; grid-template-columns: minmax(330px, .82fr) minmax(500px, 1.18fr); border-top: 1px solid var(--line-strong); }
 .project-index { border-left: 1px solid var(--line); }
@@ -177,7 +246,7 @@ dd { margin: 5px 0 0; font-size: 13px; }
 .project-preview.is-replaying .preview-body > * { animation: replay .34s ease both; }
 @keyframes replay { from { opacity: .2; transform: translateY(6px); } }
 
-.capabilities { border-top: 1px solid var(--line); background: var(--bg-raised); }
+.capabilities { border-top: 1px solid var(--line); }
 .capability-map { border-top: 1px solid var(--line-strong); }
 .capability-map article { display: grid; grid-template-columns: 60px minmax(260px, 1fr) minmax(300px, .8fr); gap: 28px; align-items: start; padding: 28px 0; border-bottom: 1px solid var(--line); }
 .capability-map article > span { color: var(--accent-strong); font-family: var(--mono); font-size: 9px; }
@@ -198,7 +267,7 @@ dd { margin: 5px 0 0; font-size: 13px; }
 .evidence-list p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
 .evidence-list b { color: var(--accent-strong); font-family: var(--mono); font-size: 8px; letter-spacing: .08em; }
 
-.research { border-block: 1px solid var(--line); background: var(--bg-raised); }
+.research { border-block: 1px solid var(--line); }
 .research-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 24px; }
 .filter-group { display: flex; flex-wrap: wrap; gap: 5px; }
 .filter-button { min-height: 40px; padding: 0 14px; border: 1px solid var(--line); background: transparent; cursor: pointer; color: var(--muted); font-family: var(--mono); font-size: 8px; letter-spacing: .06em; text-transform: uppercase; }
