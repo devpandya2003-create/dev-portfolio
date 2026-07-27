@@ -366,18 +366,23 @@
     },
     stealthvalue: {
       index: "S—004",
-      meta: "STEALTH SERIES / VALUATION / VALUE-TRAP FRAMEWORK",
+      meta: "LINKEDIN POST + STEALTH SERIES / VALUATION / VALUE-TRAP FRAMEWORK",
       title: "A cheap stock and a bargain aren’t the same thing",
-      deck: "A low multiple is an observation. The investment question is whether the discount reflects structural impairment or a temporary, fixable problem.",
+      deck: "A large drawdown is an observation—not a bounce thesis. The analytical question is whether the problem is temporary and fixable or structural and potentially terminal.",
       body: `
-        <h3>Two branches in the framework</h3>
+        <h3>Temporary—or structural?</h3>
+        <p>Dev’s July 27 LinkedIn post rejects “it is down 40%, so it has to bounce” as analysis. It separates temporarily broken situations—such as a weak quarter, a settling lawsuit, or an out-of-favor but intact sector—from structurally broken businesses facing customer losses, obsolete products, or debt without a credible path out.</p>
+        <blockquote>The useful question is not whether a stock will bounce. It is whether the impairment is temporary or structural.</blockquote>
+        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Cheap-vs-Value-Trap.png" alt="Dev Pandya visual contrasting a cheap stock with a genuinely good buy"><figcaption>The exact visual supplied with Dev’s cheap-versus-value-trap post.</figcaption></figure>
+        <h3>A second version of the framework</h3>
         <p><strong>Potential value trap:</strong> shrinking earnings, a declining industry, rising debt, or an eroding competitive moat may explain why a stock remains cheap.</p>
         <p><strong>Potentially mispriced:</strong> a temporary headline, fixable one-off stumble, an out-of-favor but intact business, or an overreaction may create a discount that can close.</p>
-        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Stealth-Value-Trap.png" alt="Dev Pandya Stealth framework distinguishing a value trap from a genuinely mispriced stock"><figcaption>The graphic asks why a low-multiple stock is cheap before calling it a bargain.</figcaption></figure>
-        <h3>What the visual does not decide</h3>
+        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Stealth-Value-Trap.png" alt="Dev Pandya Stealth framework distinguishing a value trap from a genuinely mispriced stock"><figcaption>The Stealth version asks why a low-multiple stock is cheap before calling it a bargain.</figcaption></figure>
+        <h3>What the visuals do not decide</h3>
         <p>The labels are starting hypotheses, not a security screen. Each branch still requires financial-statement evidence, industry analysis, balance-sheet stress testing, valuation work, and a falsifiable view of what would close—or justify—the discount.</p>
-        <p><a class="report-link" href="assets/research/Dev-Pandya-Stealth-Value-Trap.png" target="_blank" rel="noreferrer">Open the original Stealth value-trap graphic (PNG) ↗</a></p>
-        <p class="boundary">STEALTH VALUATION FRAMEWORK / EDUCATIONAL QUALITATIVE SCREEN / REQUIRES COMPANY-SPECIFIC DILIGENCE / NOT INVESTMENT ADVICE</p>`
+        <p><a class="report-link" href="assets/research/Dev-Pandya-Cheap-vs-Value-Trap.png" target="_blank" rel="noreferrer">Open the exact cheap-versus-value-trap visual (PNG) ↗</a></p>
+        <p><a class="report-link" href="https://www.linkedin.com/posts/dev-pandya-38a473220_its-down-40-it-has-to-bounce-i-hear-share-7487569351240417280-uji8/" target="_blank" rel="noreferrer">Read the original LinkedIn post ↗</a></p>
+        <p class="boundary">EDUCATIONAL QUALITATIVE SCREEN / REQUIRES COMPANY-SPECIFIC DILIGENCE / NOT INVESTMENT ADVICE</p>`
     },
     paperlab: {
       index: "P—004",
