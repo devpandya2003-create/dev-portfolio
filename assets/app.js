@@ -11,10 +11,10 @@
       label: "FINANCE & ACCOUNTING / INTERNSHIP",
       status: "JUNE–SEPTEMBER 2026",
       title: "Mattson Technology",
-      copy: "I am helping automate finance department processes — building AI-driven tools that streamline recurring analysis and reporting so the team spends less time on manual work. Alongside that, I evaluate customer creditworthiness using Equifax business scores, balance sheets, income statements, and cash flows; analyze production costs, material usage, and overhead allocation; and support month-end close, budget tracking, and internal reporting.",
-      architecture: ["FINANCE AUTOMATION", "CREDIT REVIEW", "COST ANALYSIS", "MANAGEMENT REVIEW"],
-      facts: [["Location", "Fremont, CA"], ["Function", "Finance + Accounting"], ["Focus", "Process automation"], ["Reporting", "VP of Finance"]],
-      note: "Assisting in automating finance department processes while gaining hands-on exposure to financial controls, forecasting, and decision support."
+      copy: "I evaluate customer creditworthiness using Equifax business scores, balance sheets, income statements, and cash flows; analyze production costs, material usage, and overhead allocation; and support month-end close, budget tracking, and internal reporting. I also help streamline recurring finance analysis and reporting through AI-assisted process automation.",
+      architecture: ["CREDIT ASSESSMENT", "FINANCIAL REVIEW", "COST & VARIANCE", "REPORTING SUPPORT"],
+      facts: [["Location", "Fremont, CA"], ["Function", "Finance + Accounting"], ["Analysis", "Credit + costs"], ["Reporting", "VP of Finance"]],
+      note: "Building practical experience across credit review, financial statements, cost analysis, controls, forecasting, and decision support."
     },
     mindox: {
       path: "experience/mindox-techno",
@@ -527,7 +527,7 @@
 
   function runCommand(command) {
     closeCommands();
-    if (["experience", "foundation", "boiii", "research", "about"].includes(command)) {
+    if (["selected-work", "research", "experience", "foundation", "process", "about"].includes(command)) {
       document.getElementById(command)?.scrollIntoView({ behavior: "smooth" });
     } else if (command === "theme") {
       cycleTheme();
@@ -537,6 +537,7 @@
   applyTheme(localStorage.getItem("dev-boiii-theme") || "auto");
   $("#theme-toggle").addEventListener("click", cycleTheme);
   $$(".project-row").forEach(row => row.addEventListener("click", () => renderProject(row.dataset.project)));
+  $$('[data-project-jump]').forEach(link => link.addEventListener('click', () => renderProject(link.dataset.projectJump)));
   $("#preview-refresh").addEventListener("click", () => renderProject($(".project-row.is-active").dataset.project));
   $$(".filter-button").forEach(button => button.addEventListener("click", () => filterNotes(button.dataset.filter)));
   $$(".note-open").forEach(button => button.addEventListener("click", () => openNote(button.dataset.note)));
