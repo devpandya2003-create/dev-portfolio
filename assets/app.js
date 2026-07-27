@@ -90,6 +90,21 @@
         <p><a class="report-link" href="assets/research/Dev-Pandya-Vistra-Equity-Research.pdf" target="_blank" rel="noreferrer">Open the complete 27-page Vistra report (PDF) ↗</a></p>
         <p class="boundary">INDEPENDENT EDUCATIONAL RESEARCH / REPORT DATE: APRIL 4, 2026 / NOT CURRENT MARKET DATA / NOT INVESTMENT ADVICE</p>`
     },
+    vistrafollowup: {
+      index: "ER—004",
+      meta: "VISTRA CORP / POST-REPORT TRACKING NOTE / SOURCE DATE NOT STATED",
+      title: "Vistra follow-up: fundamentals moved before the price",
+      deck: "A visual follow-up to the April 2026 report, preserved as a dated learning artifact rather than presented as a live recommendation or current quote.",
+      body: `
+        <h3>What the follow-up tracks</h3>
+        <p>The supplied visual says the business continued to report stronger fundamentals while the share price remained near $151. It lists a roughly 10% Q1 EPS beat, approximately 43% year-over-year revenue growth, record Q1 EBITDA, an investment-grade credit upgrade, and a new AI-demand joint venture involving KKR and Nvidia.</p>
+        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Vistra-Followup.png" alt="Dev Pandya follow-up visual comparing improving Vistra fundamentals with a roughly flat share price"><figcaption>The source graphic asks whether the thesis is early or whether its expected catalyst is wrong.</figcaption></figure>
+        <h3>What remains unresolved</h3>
+        <p>The image does not state its observation date or cite the underlying filings, rating action, consensus target, or partnership announcement. The figures are therefore shown as claims in Dev’s source graphic—not as current or independently verified market data.</p>
+        <blockquote>When operating evidence improves but price does not, the next question is whether the timing is early or the catalyst is wrong.</blockquote>
+        <p><a class="report-link" href="assets/research/Dev-Pandya-Vistra-Followup.png" target="_blank" rel="noreferrer">Open the original Vistra follow-up (PNG) ↗</a></p>
+        <p class="boundary">EDUCATIONAL POST-REPORT TRACKING / SOURCE DATE NOT STATED / FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
+    },
     firstsolar: {
       index: "ER—002",
       meta: "FIRST SOLAR / NYSE: FSLR / SELL-SIDE-STYLE EQUITY REPORT",
@@ -268,6 +283,28 @@
         <p>Valuation models and market data do not remove judgment. Framing, anchoring, overconfidence, and other cognitive errors can shape what evidence receives attention and how uncertainty is interpreted.</p>
         <p><a class="report-link" href="assets/research/Dev-Pandya-Investing-Psychology-Reading-Note.png" target="_blank" rel="noreferrer">Open the original reading note (PNG) ↗</a></p>
         <p class="boundary">BEHAVIORAL-FINANCE READING NOTE / PARAPHRASED LESSON / NOT INVESTMENT ADVICE</p>`
+    },
+    cfajourney: {
+      index: "L—001",
+      meta: "CFA LEVEL I / PERSONAL STUDY JOURNAL / SIX VISUAL NOTES",
+      title: "Building a disciplined CFA Level I study routine",
+      deck: "Six personal learning visuals connect exam preparation with study discipline, valuation concepts, and common analytical biases.",
+      body: `
+        <h3>Study process</h3>
+        <p>The journal documents a personal kickoff, a month-by-month study plan, a shift from motivation toward discipline, and a routine of combining new reading with review. These are process notes—not an exam result or a claim of mastery.</p>
+        <div class="note-visual-grid">
+          <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Level-I-Kickoff.png" alt="CFA Level I study kickoff visual with books and study notes"><figcaption>Starting the CFA Level I study journey.</figcaption></figure>
+          <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Study-Discipline.png" alt="CFA study timeline from October through February"><figcaption>A personal timeline built around steady weekly progress.</figcaption></figure>
+          <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Mindset-Shift.png" alt="CFA study mindset visual contrasting motivation with discipline"><figcaption>Moving from initial motivation toward repeatable discipline.</figcaption></figure>
+          <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Study-Routine.png" alt="CFA study routine combining new reading with revision"><figcaption>Balancing new material with review of earlier concepts.</figcaption></figure>
+        </div>
+        <h3>Concept notes</h3>
+        <p>Two additional visuals turn syllabus concepts into compact explanations: why investors may demand an illiquidity premium and how survivorship bias can make a surviving sample look stronger than the full population that originally existed.</p>
+        <div class="note-visual-grid">
+          <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Illiquidity-Premium.png" alt="Visual comparing liquid and illiquid investments and the illiquidity premium"><figcaption>Why giving up flexibility can require higher expected compensation.</figcaption></figure>
+          <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Survivorship-Bias.png" alt="Visual explaining survivorship bias with surviving and failed funds"><figcaption>Why excluding failed observations can distort reported performance.</figcaption></figure>
+        </div>
+        <p class="boundary">PERSONAL CFA LEVEL I STUDY JOURNAL / NO EXAM-RESULT CLAIM / NOT A CFA CHARTER / NO CFA INSTITUTE ENDORSEMENT / NOT INVESTMENT ADVICE</p>`
     },
     stealthcall: {
       index: "S—001",
