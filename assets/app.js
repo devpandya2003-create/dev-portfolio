@@ -23,7 +23,7 @@
       title: "Mindox Techno",
       copy: "I analyzed project and inventory costs, identified a 7% variance between budgeted and actual expenses, and prepared management material on cost trends.",
       architecture: ["COST DATA", "VARIANCE", "MARGIN VIEW", "SUMMARY"],
-      facts: [["Location", "Singapore"], ["Tools", "Excel + PowerPoint"], ["Scope", "50+ line items"]],
+      facts: [["Location", "Singapore"], ["Tools", "Excel + PowerPoint"], ["Scope", "500+ line items"]],
       note: "Built cost schedules and supported internal review with clear summaries."
     },
     relianceops: {
@@ -31,7 +31,7 @@
       label: "ASSET RECONSTRUCTION / OPERATIONS INTERNSHIP",
       status: "MAY–JULY 2023",
       title: "Reliance Asset Reconstruction Company",
-      copy: "I analyzed borrower and loan data for more than 50 distressed accounts representing over ₹70 crore of exposure, then prepared account-level summaries for portfolio monitoring.",
+      copy: "I analyzed borrower and loan data for more than 50 distressed accounts, then prepared borrower, collateral, and recovery summaries for portfolio monitoring.",
       architecture: ["BORROWER DATA", "VALIDATE", "ACCOUNT SUMMARY", "PORTFOLIO REVIEW"],
       facts: [["Location", "Mumbai"], ["Scope", "50+ accounts"], ["Data accuracy", "Improved 18%"]],
       note: "Maintained KYC, borrower, and property records with systematic reconciliation checks."
@@ -122,7 +122,7 @@
         </ul>
         <h3>Risks identified</h3>
         <p>The report highlights policy dependence, supply disruption, global module-price competition, manufacturing capital expenditure, backlog execution, and substitute-technology risk.</p>
-        <p><a class="report-link" href="assets/research/Dev-Pandya-First-Solar-Sell-Side-Report.docx" download>Download the complete First Solar report (DOCX) ↓</a></p>
+        <p><a class="report-link" href="assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf" target="_blank" rel="noreferrer">Open the normalized First Solar brief (PDF) ↗</a></p>
         <p class="boundary">INDEPENDENT EDUCATIONAL RESEARCH / SOURCE DOCUMENT HAS NO STATED REPORT DATE / NOT CURRENT MARKET DATA / NOT INVESTMENT ADVICE</p>`
     },
     ttwo: {
@@ -141,7 +141,7 @@
         </ul>
         <h3>Key tension</h3>
         <p>The long-term franchise thesis is constructive, but the report argues against an all-at-once entry because valuation, deferred online monetization, leverage, and release-delay risk make the near-term setup more balanced.</p>
-        <p><a class="report-link" href="assets/research/Dev-Pandya-Take-Two-Equity-Research.docx" download>Download the complete Take-Two report (DOCX) ↓</a></p>
+        <p><a class="report-link" href="assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf" target="_blank" rel="noreferrer">Open the normalized Take-Two brief (PDF) ↗</a></p>
         <p class="boundary">INDEPENDENT EDUCATIONAL RESEARCH / REPORT DATE: JULY 4, 2026 / ILLUSTRATIVE RATING AND TARGET / NOT INVESTMENT ADVICE</p>`
     },
     psychology: {
@@ -207,7 +207,7 @@
           <li>In-sample success says little about a frozen forward period.</li>
         </ul>
         <blockquote>The test is not whether a chart can explain the past. It is whether a frozen rule survives the future after costs.</blockquote>
-        <h3>boiii’s operating rule</h3>
+        <h3>my research-process rule</h3>
         <p>A chart pattern may generate a paper hypothesis. It cannot become a promoted strategy until the exact rule, data vintage, benchmark, costs, invalidation, and out-of-sample protocol are frozen and independently checked.</p>
         <h3>Source</h3>
         <p>Cheol-Ho Park and Scott H. Irwin, <em>The Profitability of Technical Analysis: A Review</em>, AgMAS Project Research Report 2004-04. A user-provided source copy is archived locally with its checksum.</p>
@@ -221,7 +221,7 @@
       body: `
         <h3>The question explored</h3>
         <p>The carousel argues that AI firms may remove intermediaries from parts of dealmaking while still relying on investment banks for IPO execution, distribution, and liquidity. It frames that tension as simultaneous disruption and dependence.</p>
-        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-AI-IPO-Carousel-Cover.png" alt="Cover of Dev Pandya’s six-slide AI IPO and Wall Street carousel"><figcaption>Cover from the supplied six-slide carousel.</figcaption></figure>
+        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-AI-IPO-Carousel-Cover.webp" alt="Cover of Dev Pandya’s six-slide AI IPO and Wall Street carousel"><figcaption>Cover from the supplied six-slide carousel.</figcaption></figure>
         <h3>Examples used</h3>
         <p>The source graphics cite Anthropic, OpenAI, and SpaceX alongside reported or illustrative valuations and banking relationships. Those figures are claims in the supplied, undated carousel; this portfolio does not represent them as current or independently verified.</p>
         <blockquote>Can a company disrupt finance and still need Wall Street to become liquid?</blockquote>
@@ -264,7 +264,7 @@
       body: `
         <h3>The two races</h3>
         <p>The generation side highlights nuclear, gas, and large-scale producers, naming Vistra, Constellation, and Talen. The storage side highlights long-duration batteries and novel storage technology, naming Noon Energy and Form Energy. The visual’s key distinction is units: generation capacity is measured in gigawatts, while storage must also be evaluated by discharge duration.</p>
-        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-AI-Power-Two-Races.png" alt="Dev Pandya poster comparing AI power generation and long-duration energy storage"><figcaption>The poster contrasts the race to generate AI power with the race to store it.</figcaption></figure>
+        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-AI-Power-Two-Races.webp" alt="Dev Pandya poster comparing AI power generation and long-duration energy storage"><figcaption>The poster contrasts the race to generate AI power with the race to store it.</figcaption></figure>
         <h3>The source-graphic claim</h3>
         <p>The supplied poster says Meta reserved up to 1 GW and 100 GWh of storage from Noon Energy, describing 100-plus-hour discharge. The graphic does not state a source date; the claim is preserved as authored and is not represented here as independently verified or current.</p>
         <p><a class="report-link" href="assets/research/Dev-Pandya-AI-Power-Two-Races.png" target="_blank" rel="noreferrer">Open the original AI-power visual (PNG) ↗</a></p>
@@ -373,7 +373,7 @@
         <h3>Temporary—or structural?</h3>
         <p>Dev’s July 27 LinkedIn post rejects “it is down 40%, so it has to bounce” as analysis. It separates temporarily broken situations—such as a weak quarter, a settling lawsuit, or an out-of-favor but intact sector—from structurally broken businesses facing customer losses, obsolete products, or debt without a credible path out.</p>
         <blockquote>The useful question is not whether a stock will bounce. It is whether the impairment is temporary or structural.</blockquote>
-        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Cheap-vs-Value-Trap.png" alt="Dev Pandya visual contrasting a cheap stock with a genuinely good buy"><figcaption>The exact visual supplied with Dev’s cheap-versus-value-trap post.</figcaption></figure>
+        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Cheap-vs-Value-Trap.webp" alt="Dev Pandya visual contrasting a cheap stock with a genuinely good buy"><figcaption>The exact visual supplied with Dev’s cheap-versus-value-trap post.</figcaption></figure>
         <h3>A second version of the framework</h3>
         <p><strong>Potential value trap:</strong> shrinking earnings, a declining industry, rising debt, or an eroding competitive moat may explain why a stock remains cheap.</p>
         <p><strong>Potentially mispriced:</strong> a temporary headline, fixable one-off stumble, an out-of-favor but intact business, or an overreaction may create a discount that can close.</p>
@@ -410,7 +410,7 @@
       title: "Every claim needs a way to lose",
       deck: "The easiest way to protect a favorite idea is to never say what would prove it wrong.",
       body: `
-        <p>I am building boiii around a simple discipline: every research claim should travel with a mechanism, a competing explanation, and a falsification rule.</p>
+        <p>I am building my Finance Research Process around a simple discipline: every research claim should travel with a mechanism, a competing explanation, and a falsification rule.</p>
         <h3>A useful chain</h3>
         <p>Evidence → mechanism → constraint → observable implication → invalidation. If one link is missing, the system should show the gap instead of manufacturing confidence.</p>
         <blockquote>A thesis that cannot lose is not a thesis. It is identity.</blockquote>
@@ -447,15 +447,12 @@
 
   function applyTheme(mode) {
     let resolved = mode;
-    if (mode === "auto") {
-      const hour = new Date().getHours();
-      resolved = hour >= 7 && hour < 19 ? "light" : "dark";
-    }
+    if (mode === "auto") resolved = "dark";
     root.dataset.theme = resolved;
     root.dataset.themeMode = mode;
     const themeToggle = $("#theme-toggle");
     if (themeToggle) themeToggle.textContent = `Theme: ${mode}`;
-    localStorage.setItem("dev-boiii-theme", mode);
+    localStorage.setItem("dev-finance-theme", mode);
   }
 
   function cycleTheme() {
@@ -504,15 +501,36 @@
     if (location.hash.startsWith("#note-")) history.replaceState(null, "", location.pathname);
   }
 
-  function filterNotes(topic) {
+  let activeResearchTopic = "all";
+  const originalResearchOrder = new Map($$(".research-row").map((row, index) => [row, index]));
+  function applyResearchView() {
+    const query = ($("#research-search")?.value || "").trim().toLowerCase();
+    const type = $("#research-type")?.value || "all";
+    const sort = $("#research-sort")?.value || "portfolio";
+    const list = $(".archive-research .research-list") || $(".research-list");
+    const rows = $$(".research-row");
+    rows.sort((a, b) => {
+      if (sort === "title") return a.dataset.title.localeCompare(b.dataset.title);
+      if (sort === "domain") return a.dataset.topic.localeCompare(b.dataset.topic) || a.dataset.title.localeCompare(b.dataset.title);
+      if (sort === "newest") return (b.dataset.date || "").localeCompare(a.dataset.date || "") || originalResearchOrder.get(a) - originalResearchOrder.get(b);
+      return originalResearchOrder.get(a) - originalResearchOrder.get(b);
+    }).forEach(row => list?.appendChild(row));
     let visible = 0;
-    $$(".filter-button").forEach(button => button.classList.toggle("is-active", button.dataset.filter === topic));
-    $$(".research-row").forEach(row => {
-      const show = topic === "all" || row.dataset.topic === topic;
+    rows.forEach(row => {
+      const topicMatch = activeResearchTopic === "all" || row.dataset.topic === activeResearchTopic;
+      const textMatch = !query || row.textContent.toLowerCase().includes(query);
+      const typeMatch = type === "all" || (type === "artifact" ? row.dataset.artifact === "true" : row.dataset.kind === type);
+      const show = topicMatch && textMatch && typeMatch;
       row.hidden = !show;
       if (show) visible += 1;
     });
-    $("#result-count").textContent = `${visible} ${visible === 1 ? "item" : "items"}`;
+    if ($("#result-count")) $("#result-count").textContent = `${visible} ${visible === 1 ? "item" : "items"}`;
+    $("#research-empty")?.toggleAttribute("hidden", visible !== 0);
+  }
+  function filterNotes(topic) {
+    activeResearchTopic = topic;
+    $$(".filter-button").forEach(button => button.classList.toggle("is-active", button.dataset.filter === topic));
+    applyResearchView();
   }
 
   function openCommands() {
@@ -536,12 +554,15 @@
     }
   }
 
-  applyTheme(localStorage.getItem("dev-boiii-theme") || "auto");
+  applyTheme(localStorage.getItem("dev-finance-theme") || "auto");
   $("#theme-toggle")?.addEventListener("click", cycleTheme);
   $$(".project-row").forEach(row => row.addEventListener("click", () => renderProject(row.dataset.project)));
   $$('[data-project-jump]').forEach(link => link.addEventListener('click', () => renderProject(link.dataset.projectJump)));
   $("#preview-refresh")?.addEventListener("click", () => renderProject($(".project-row.is-active").dataset.project));
   $$(".filter-button").forEach(button => button.addEventListener("click", () => filterNotes(button.dataset.filter)));
+  $("#research-search")?.addEventListener("input", applyResearchView);
+  $("#research-type")?.addEventListener("change", applyResearchView);
+  $("#research-sort")?.addEventListener("change", applyResearchView);
   $$(".note-open").forEach(button => button.addEventListener("click", () => openNote(button.dataset.note)));
   $("#dialog-close")?.addEventListener("click", closeNote);
   $("#note-dialog")?.addEventListener("click", event => { if (event.target === $("#note-dialog")) closeNote(); });

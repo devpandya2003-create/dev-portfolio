@@ -6,8 +6,7 @@
   const mobileNav = document.querySelector("#mobile-nav");
 
   function applyTheme(mode) {
-    const hour = new Date().getHours();
-    const resolved = mode === "auto" ? (hour >= 7 && hour < 19 ? "light" : "dark") : mode;
+    const resolved = mode === "auto" ? "dark" : mode;
     root.dataset.theme = resolved;
     root.dataset.themeMode = mode;
     if (themeButton) themeButton.textContent = `Theme: ${mode}`;
