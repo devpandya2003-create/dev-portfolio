@@ -146,14 +146,15 @@
     },
     psychology: {
       index: "R—001",
-      meta: "EQUITIES / BEHAVIORAL FINANCE / SOURCE-CITED",
+      meta: "EQUITIES / BEHAVIORAL FINANCE / SOURCE-CITED SYNTHESIS",
       title: "When psychology meets market structure",
       deck: "Palm/3Com is useful precisely because the obvious pricing contradiction did not guarantee an easy, executable arbitrage.",
       body: `
+        <aside class="citation-disclosure"><strong>Authorship &amp; source boundary</strong><p>Interpretation and synthesis by Dev Pandya. The Stanford feature and four academic papers below are external works by their named authors; Dev does not claim authorship of them.</p></aside>
         <h3>The claim</h3>
         <p>A Stanford Graduate School of Business feature uses the Palm/3Com carve-out to ask why apparently inconsistent prices can persist. The useful research frame is not “investors were irrational.” It is bias or disagreement plus a mechanism, an arbitrage constraint, and a measurable implication.</p>
         <blockquote>A valuation identity does not guarantee an executable trade.</blockquote>
-        <h3>What boiii records</h3>
+        <h3>What the Finance Research Process records</h3>
         <ul>
           <li>Reference dependence, heterogeneous beliefs, momentum, and underreaction are hypotheses—not universal laws.</li>
           <li>Short-sale constraints can cause observed prices to overweight optimistic beliefs.</li>
@@ -162,10 +163,15 @@
         </ul>
         <h3>What it does not prove</h3>
         <p>It does not prove that high volume predicts crashes, that social participation creates alpha, or that a historical anomaly remains profitable. Competing rational and risk-based explanations remain required.</p>
-        <h3>Sources</h3>
-        <p><a href="https://www.gsb.stanford.edu/insights/where-stock-market-psychology-pricing-intersect" target="_blank" rel="noreferrer">Stanford GSB: Where Stock Market Psychology and Pricing Intersect ↗</a></p>
-        <p>The local research note also links the underlying Barberis–Huang, Hong–Stein, Chen–Hong–Stein, and Hong–Kubik–Stein papers.</p>
-        <p class="boundary">EDUCATIONAL RESEARCH / PAPER-ONLY FOLLOW-UP / NOT TRADING ADVICE</p>`
+        <h3>External sources and related literature</h3>
+        <ol class="citation-list">
+          <li>Stanford Graduate School of Business, <a href="https://www.gsb.stanford.edu/insights/where-stock-market-psychology-pricing-intersect" target="_blank" rel="noreferrer">“Where Stock Market Psychology and Pricing Intersect” ↗</a>, secondary feature; accessed July 27, 2026.</li>
+          <li>Nicholas Barberis and Ming Huang (2001), “Mental Accounting, Loss Aversion, and Individual Stock Returns,” <em>The Journal of Finance</em> 56(4), 1247–1292. <a href="https://doi.org/10.1111/0022-1082.00367" target="_blank" rel="noreferrer">DOI ↗</a></li>
+          <li>Harrison Hong and Jeremy C. Stein (1999), “A Unified Theory of Underreaction, Momentum Trading, and Overreaction in Asset Markets,” <em>The Journal of Finance</em> 54(6), 2143–2184. <a href="https://doi.org/10.1111/0022-1082.00184" target="_blank" rel="noreferrer">DOI ↗</a></li>
+          <li>Joseph Chen, Harrison Hong, and Jeremy C. Stein (2002), “Breadth of Ownership and Stock Returns,” <em>Journal of Financial Economics</em> 66(2–3), 171–205. <a href="https://doi.org/10.1016/S0304-405X(02)00223-4" target="_blank" rel="noreferrer">DOI ↗</a></li>
+          <li>Harrison Hong, Jeffrey D. Kubik, and Jeremy C. Stein (2004), “Social Interaction and Stock-Market Participation,” <em>The Journal of Finance</em> 59(1), 137–163. <a href="https://doi.org/10.1111/j.1540-6261.2004.00629.x" target="_blank" rel="noreferrer">DOI ↗</a></li>
+        </ol>
+        <p class="boundary">DEV’S SOURCE-CITED SYNTHESIS / EXTERNAL AUTHORSHIP IDENTIFIED / PAPER-ONLY FOLLOW-UP / NOT TRADING ADVICE</p>`
     },
     derivatives: {
       index: "R—002",
@@ -173,6 +179,7 @@
       title: "Corporate derivatives use and stock liquidity",
       deck: "A reported association between corporate hedging and stock liquidity is a research clue—not evidence that investors trading derivatives earn alpha.",
       body: `
+        <aside class="citation-disclosure"><strong>Authorship &amp; source boundary</strong><p>Summary and critical interpretation by Dev Pandya. The empirical study, dataset, methods, and findings belong to Neeru Chaudhry and Aastha Gupta.</p></aside>
         <h3>What was studied</h3>
         <p>Chaudhry and Gupta study 3,062 Indian-firm observations from 2016–2021. They report that stocks of firms using derivatives were more liquid, particularly where information asymmetry, firm-specific risk, or negative sentiment was higher.</p>
         <h3>The possible channel</h3>
@@ -186,16 +193,17 @@
           <li>Results for India in 2016–2021 may not transfer to other markets or settlement regimes.</li>
           <li>Improved liquidity does not imply higher future returns.</li>
         </ul>
-        <h3>Source</h3>
-        <p><a href="https://doi.org/10.1016/j.intfin.2024.102077" target="_blank" rel="noreferrer">Journal of International Financial Markets, Institutions and Money, article 102077 ↗</a></p>
-        <p class="boundary">SOURCE-CITED EDUCATION / NO RETURN CLAIM / NO TRADE AUTHORITY</p>`
+        <h3>External source</h3>
+        <p class="citation-entry">Neeru Chaudhry and Aastha Gupta (2024), “Impact of Using Derivatives on Stock Market Liquidity,” <em>Journal of International Financial Markets, Institutions and Money</em>, vol. 97, article 102077. <a href="https://doi.org/10.1016/j.intfin.2024.102077" target="_blank" rel="noreferrer">https://doi.org/10.1016/j.intfin.2024.102077 ↗</a></p>
+        <p class="boundary">DEV’S SUMMARY AND CRITIQUE / EXTERNAL PAPER BY CHAUDHRY AND GUPTA / NO RETURN CLAIM / NO TRADE AUTHORITY</p>`
     },
     backtests: {
       index: "R—003",
-      meta: "QUANT RESEARCH / TECHNICAL ANALYSIS / REVIEW",
+      meta: "QUANT RESEARCH / TECHNICAL ANALYSIS / EXTERNAL REVIEW",
       title: "Why profitable backtests can disappear",
       deck: "Positive historical findings are the start of diligence, not the end of it.",
       body: `
+        <aside class="citation-disclosure"><strong>Authorship &amp; source boundary</strong><p>Research-process interpretation by Dev Pandya. The literature review and its study counts belong to Cheol-Ho Park and Scott H. Irwin.</p></aside>
         <h3>The evidence</h3>
         <p>Park and Irwin’s review reports that 58 of 92 modern technical-analysis studies found positive results, 24 negative results, and 10 mixed results. The headline is interesting. The evaluation weaknesses are more important.</p>
         <h3>The research debt</h3>
@@ -207,11 +215,11 @@
           <li>In-sample success says little about a frozen forward period.</li>
         </ul>
         <blockquote>The test is not whether a chart can explain the past. It is whether a frozen rule survives the future after costs.</blockquote>
-        <h3>my research-process rule</h3>
+        <h3>Dev’s research-process rule</h3>
         <p>A chart pattern may generate a paper hypothesis. It cannot become a promoted strategy until the exact rule, data vintage, benchmark, costs, invalidation, and out-of-sample protocol are frozen and independently checked.</p>
-        <h3>Source</h3>
-        <p>Cheol-Ho Park and Scott H. Irwin, <em>The Profitability of Technical Analysis: A Review</em>, AgMAS Project Research Report 2004-04. A user-provided source copy is archived locally with its checksum.</p>
-        <p class="boundary">PAPER EVALUATION ONLY / NO BROKER / NO ORDERS</p>`
+        <h3>External source</h3>
+        <p class="citation-entry">Cheol-Ho Park and Scott H. Irwin (2004), <em>The Profitability of Technical Analysis: A Review</em>, AgMAS Project Research Report 2004-04. <a href="https://doi.org/10.2139/ssrn.603481" target="_blank" rel="noreferrer">https://doi.org/10.2139/ssrn.603481 ↗</a></p>
+        <p class="boundary">DEV’S RESEARCH-PROCESS INTERPRETATION / EXTERNAL REVIEW BY PARK AND IRWIN / PAPER EVALUATION ONLY / NO ORDERS</p>`
     },
     aiipo: {
       index: "V—001",
@@ -272,17 +280,20 @@
     },
     readingmind: {
       index: "V—005",
-      meta: "BEHAVIORAL FINANCE / READING NOTE / DANIEL KAHNEMAN",
+      meta: "BEHAVIORAL FINANCE / READING NOTE / EXTERNAL BOOK",
       title: "The mind that reads the market",
       deck: "A reading note on how cognitive bias can shape an investor’s interpretation before market mechanics even enter the analysis.",
       body: `
+        <aside class="citation-disclosure"><strong>Authorship &amp; source boundary</strong><p>Reading note and finance application by Dev Pandya. <em>Thinking, Fast and Slow</em> and its underlying ideas are Daniel Kahneman’s work; the displayed sentence is Dev’s paraphrased takeaway, not a quotation from the book.</p></aside>
         <h3>The lesson</h3>
         <p>The graphic presents this takeaway: “Most investing mistakes aren’t about markets. They’re about the mind that reads them.” It identifies the idea as a lesson from Daniel Kahneman’s <em>Thinking, Fast and Slow</em>, rather than labeling it a direct quotation from the book.</p>
-        <figure class="note-visual-frame note-visual-light"><img src="assets/research/Dev-Pandya-Investing-Psychology-Reading-Note.png" alt="Dev Pandya behavioral-finance reading note inspired by Thinking, Fast and Slow"><figcaption>A concise bridge between behavioral-finance reading and investment decision-making.</figcaption></figure>
+        <figure class="note-visual-frame note-visual-light"><img src="assets/research/Dev-Pandya-Investing-Psychology-Reading-Note.png" alt="Dev Pandya behavioral-finance reading note inspired by Thinking, Fast and Slow"><figcaption>Dev’s visual reading note; the underlying book is cited below and is not Dev’s work.</figcaption></figure>
         <h3>Why it belongs in the research set</h3>
         <p>Valuation models and market data do not remove judgment. Framing, anchoring, overconfidence, and other cognitive errors can shape what evidence receives attention and how uncertainty is interpreted.</p>
-        <p><a class="report-link" href="assets/research/Dev-Pandya-Investing-Psychology-Reading-Note.png" target="_blank" rel="noreferrer">Open the original reading note (PNG) ↗</a></p>
-        <p class="boundary">BEHAVIORAL-FINANCE READING NOTE / PARAPHRASED LESSON / NOT INVESTMENT ADVICE</p>`
+        <h3>External source</h3>
+        <p class="citation-entry">Daniel Kahneman (2011), <em>Thinking, Fast and Slow</em>, Farrar, Straus and Giroux. ISBN 978-0-374-27563-1. <a href="https://search.worldcat.org/isbn/9780374275631" target="_blank" rel="noreferrer">WorldCat bibliographic record ↗</a></p>
+        <p><a class="report-link" href="assets/research/Dev-Pandya-Investing-Psychology-Reading-Note.png" target="_blank" rel="noreferrer">Open Dev’s reading-note visual (PNG) ↗</a></p>
+        <p class="boundary">DEV’S READING NOTE AND PARAPHRASE / EXTERNAL BOOK BY DANIEL KAHNEMAN / NOT INVESTMENT ADVICE</p>`
     },
     cfajourney: {
       index: "L—001",
@@ -347,22 +358,25 @@
     },
     stealthfunds: {
       index: "S—003",
-      meta: "STEALTH SERIES / ACTIVE MANAGEMENT / SOURCE CHECK REQUIRED",
-      title: "Why beating the benchmark is difficult",
-      deck: "The supplied graphic presents a forceful active-management statistic, but does not identify its source, observation period, or measurement date.",
+      meta: "STEALTH SERIES / ACTIVE MANAGEMENT / ATTRIBUTION AUDIT",
+      title: "Why active-fund statistics need dated sources",
+      deck: "A supplied graphic made numerical claims without naming a dataset, report edition, or measurement date, so the figures are excluded here rather than repeated as evidence.",
       body: `
-        <h3>Claims shown in the graphic</h3>
+        <aside class="citation-disclosure citation-warning"><strong>Publication decision</strong><p>Research-integrity review by Dev Pandya. The supplied graphic’s numerical claims are not published in this note because their original author, dataset, report edition, and measurement date could not be verified.</p></aside>
+        <h3>Why the numbers were removed</h3>
+        <p>Active-versus-passive results depend on the exact category, benchmark, fees, survivorship treatment, end date, and measurement horizon. A percentage without those fields is not a usable citation—even when it resembles a statistic from a reputable scorecard.</p>
+        <h3>Minimum evidence required</h3>
         <ul>
-          <li><strong>89.5%</strong> of active U.S. large-cap funds underperformed the S&amp;P 500 over 15 years.</li>
-          <li>That implies approximately <strong>one in ten</strong> odds of selecting a fund that beat the benchmark.</li>
-          <li><strong>Zero of 22</strong> U.S. equity categories had a majority of managers win.</li>
-          <li>The graphic argues that the result worsens as the measurement horizon lengthens.</li>
+          <li>Named publisher and report edition.</li>
+          <li>Exact observation end date and investment horizon.</li>
+          <li>Fund category, benchmark, fee basis, and survivorship methodology.</li>
+          <li>Stable primary-source URL and table or page reference.</li>
+          <li>A clear distinction between category-level underperformance and an investor’s ex-ante fund-selection probability.</li>
         </ul>
-        <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Stealth-Active-Funds.png" alt="Dev Pandya Stealth graphic presenting an 89.5 percent active-fund underperformance claim"><figcaption>The supplied graphic is reproduced as authored; its statistics require a dated primary source before analytical use.</figcaption></figure>
-        <h3>What remains unverified</h3>
-        <p>The image does not identify the dataset, report edition, end date, survivorship treatment, fee basis, category definitions, or whether the fund-selection interpretation follows directly from the underlying study. This portfolio therefore preserves the numbers as undated source-graphic claims—not current or independently verified facts.</p>
-        <p><a class="report-link" href="assets/research/Dev-Pandya-Stealth-Active-Funds.png" target="_blank" rel="noreferrer">Open the original Stealth active-funds graphic (PNG) ↗</a></p>
-        <p class="boundary">STEALTH DATA COMMENTARY / SOURCE AND MEASUREMENT DATE NOT SUPPLIED / STATISTICS NOT INDEPENDENTLY VERIFIED / NOT INVESTMENT ADVICE</p>`
+        <blockquote>An unsupported statistic should be removed, not made credible by adding a plausible citation after the fact.</blockquote>
+        <h3>Status</h3>
+        <p>No primary source has been matched to the supplied graphic. The original image remains excluded from this public note. If its provenance is later established, the claim can be restored with the exact edition, table, date, and methodology.</p>
+        <p class="boundary">DEV’S ATTRIBUTION AUDIT / UNSOURCED NUMBERS REMOVED / NO CLAIM ABOUT CURRENT FUND PERFORMANCE / NOT INVESTMENT ADVICE</p>`
     },
     stealthvalue: {
       index: "S—004",

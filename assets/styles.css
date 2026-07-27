@@ -357,6 +357,15 @@ dd { font-size: 14px; }
 #dialog-content .note-visual-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 34px 0; }
 #dialog-content .note-visual-grid .note-visual-frame { margin: 0; }
 #dialog-content .boundary { margin-top: 44px; padding: 16px; border: 1px solid var(--line); font-family: var(--mono); font-size: 9px; }
+#dialog-content .citation-disclosure { margin: 0 0 42px; padding: 20px 22px; border: 1px solid color-mix(in srgb, var(--accent-strong) 48%, var(--line)); border-left: 4px solid var(--accent-strong); background: color-mix(in srgb, var(--accent-strong) 7%, var(--bg-soft)); }
+#dialog-content .citation-disclosure strong { display: block; margin-bottom: 8px; color: var(--accent-strong); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+#dialog-content .citation-disclosure p { margin: 0; color: var(--ink); }
+#dialog-content .citation-warning { border-color: color-mix(in srgb, var(--warning) 50%, var(--line)); border-left-color: var(--warning); background: color-mix(in srgb, var(--warning) 8%, var(--bg-soft)); }
+#dialog-content .citation-warning strong { color: var(--warning); }
+#dialog-content .citation-list { margin: 18px 0 0; padding-left: 24px; }
+#dialog-content .citation-list li { margin: 0; padding: 14px 0 14px 8px; border-bottom: 1px solid var(--line); line-height: 1.55; }
+#dialog-content .citation-list li:first-child { border-top: 1px solid var(--line); }
+#dialog-content .citation-entry { padding: 18px; border: 1px solid var(--line); background: var(--bg-soft); line-height: 1.6; }
 .command-dialog { display: none; align-items: start; justify-content: center; padding-top: 12vh; background: rgba(0, 0, 0, .58); }
 .command-dialog[open] { display: flex; }
 .command-shell { width: min(calc(100% - 32px), 620px); border: 1px solid var(--line-strong); background: var(--bg-raised); box-shadow: 0 24px 80px rgba(0, 0, 0, .35); }
@@ -414,6 +423,10 @@ dd { font-size: 14px; }
 .archive-hero { padding-block: clamp(110px,14vw,190px); }
 .archive-hero h1 { max-width: 1050px; margin: 20px 0 28px; font-family: var(--display); font-size: clamp(58px,8vw,108px); font-weight: 600; letter-spacing: -.06em; line-height: .93; }
 .archive-hero > p:not(.eyebrow) { max-width: 760px; color: var(--muted); font-size: 20px; }
+.archive-attribution { max-width: 900px; margin: 34px 0; padding: 20px 22px; border: 1px solid color-mix(in srgb, var(--accent-strong) 42%, var(--line)); border-left: 4px solid var(--accent-strong); background: color-mix(in srgb, var(--accent-strong) 6%, var(--bg-raised)); }
+.archive-attribution strong { display: block; margin-bottom: 8px; color: var(--accent-strong); font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.archive-attribution p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.research-preview .archive-attribution { margin: 0 0 36px; }
 .archive-research { padding-top: clamp(80px,10vw,130px); }
 .archive-research .note-meta { row-gap: 5px; }
 
@@ -588,6 +601,9 @@ html[data-theme="light"] .contact-section { --accent: #af4656; --accent-strong: 
 .evidence-warning { margin: 22px 0 30px; padding: 20px; border-left: 4px solid var(--warning); background: color-mix(in srgb,var(--warning) 8%,var(--bg-raised)); }
 .evidence-warning strong { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
 .evidence-warning p, .case-note { margin-bottom: 0; }
+.authorship-source-boundary { margin: 20px 0 28px; padding: 20px; border: 1px solid color-mix(in srgb,var(--accent-strong) 44%,var(--line)); border-left: 4px solid var(--accent-strong); background: color-mix(in srgb,var(--accent-strong) 7%,var(--bg-raised)); }
+.authorship-source-boundary strong { display: block; margin-bottom: 7px; color: var(--accent-strong); font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.authorship-source-boundary p { margin: 0; color: var(--muted); }
 .error-shell { min-height: calc(100vh - 80px); display: flex; flex-direction: column; justify-content: center; padding-block: 110px; }
 .error-shell h1 { max-width: 900px; margin: 18px 0; font-family: var(--display); font-size: clamp(58px,9vw,118px); line-height: .9; letter-spacing: -.06em; }
 .error-shell > p:not(.eyebrow) { max-width: 650px; color: var(--muted); font-size: 20px; }

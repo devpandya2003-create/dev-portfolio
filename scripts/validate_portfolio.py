@@ -62,6 +62,29 @@ for control in ('research-search','research-sort','research-type'):
  if f'id="{control}"' not in archive:errors.append(f'archive control missing: {control}')
 for stale in ('₹70 crore','50+ line items','Finance internships','CFA Level I Candidate','LinkedIn_Outreach_Log','OwnerCommandGate','BEGIN PRIVATE KEY'):
  if stale.lower() in site_text.lower():errors.append(f'stale/private pattern present: {stale}')
+if 'boiii' in app.lower():errors.append('public research notes must use Finance Research Process, not internal boiii name')
+for unsupported in ('89.5%','Zero of 22','one in ten odds'):
+ if unsupported.lower() in (archive+'\n'+app).lower():errors.append(f'unsupported active-fund claim remains public: {unsupported}')
+required_citations=(
+ '10.1111/0022-1082.00367','10.1111/0022-1082.00184',
+ '10.1016/S0304-405X(02)00223-4','10.1111/j.1540-6261.2004.00629.x',
+ '10.1016/j.intfin.2024.102077','10.2139/ssrn.603481','978-0-374-27563-1')
+for citation in required_citations:
+ if citation not in app:errors.append(f'required external citation missing: {citation}')
+if app.count('Authorship &amp; source boundary')<4:errors.append('external-source notes need visible authorship boundaries')
+active_audit='data-title="why active-fund statistics need dated sources" data-date="" data-kind="note" data-artifact="false"'
+if active_audit not in archive:errors.append('active-fund attribution audit row must remain a non-artifact note')
+for page in (home,archive):
+ if 'Authorship &amp; attribution' not in page:errors.append('global research authorship disclosure missing')
+case_sources={
+ 'research/take-two/index.html':('0001628280-26-037434','0001628280-26-005119','Original uncited coursework DOCX'),
+ 'research/first-solar/index.html':('0001274494-26-000021','0001274494-26-000109','Original uncited coursework DOCX'),
+ 'research/vistra/index.html':('0001692819-26-000006','0001692819-26-000014','licensed source material')}
+for rel,markers in case_sources.items():
+ text=(ROOT/rel).read_text()
+ if 'authorship-source-boundary' not in text:errors.append(f'authorship boundary missing: {rel}')
+ for marker in markers:
+  if marker not in text:errors.append(f'case source marker missing in {rel}: {marker}')
 for phrase in ('500+ line items','more than 50 distressed accounts'):
  if phrase not in app:errors.append(f'expected synchronized experience phrase missing: {phrase}')
 critical=['assets/Dev-Pandya-Recruiter-Portfolio-Brief.pdf','assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf','assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf','assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx','assets/models/Dev-Pandya-Take-Two-Scenario-Analysis.xlsx','assets/models/Dev-Pandya-First-Solar-Research-Audit.xlsx','assets/research/vistra-valuation-bridge.png','assets/research/take-two-scenario-ranges.png','assets/research/first-solar-dupont-audit.png']
