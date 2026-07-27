@@ -453,7 +453,8 @@
     }
     root.dataset.theme = resolved;
     root.dataset.themeMode = mode;
-    $("#theme-toggle").textContent = `Theme: ${mode}`;
+    const themeToggle = $("#theme-toggle");
+    if (themeToggle) themeToggle.textContent = `Theme: ${mode}`;
     localStorage.setItem("dev-boiii-theme", mode);
   }
 
@@ -516,18 +517,19 @@
 
   function openCommands() {
     const dialog = $("#command-dialog");
+    if (!dialog) return;
     if (!dialog.open) dialog.showModal();
     setTimeout(() => $(".command-list button", dialog)?.focus(), 0);
   }
 
   function closeCommands() {
     const dialog = $("#command-dialog");
-    if (dialog.open) dialog.close();
+    if (dialog?.open) dialog.close();
   }
 
   function runCommand(command) {
     closeCommands();
-    if (["selected-work", "research", "experience", "foundation", "process", "about"].includes(command)) {
+    if (["selected-work", "experience", "capabilities", "research", "foundation", "process", "contact"].includes(command)) {
       document.getElementById(command)?.scrollIntoView({ behavior: "smooth" });
     } else if (command === "theme") {
       cycleTheme();
@@ -535,18 +537,35 @@
   }
 
   applyTheme(localStorage.getItem("dev-boiii-theme") || "auto");
-  $("#theme-toggle").addEventListener("click", cycleTheme);
+  $("#theme-toggle")?.addEventListener("click", cycleTheme);
   $$(".project-row").forEach(row => row.addEventListener("click", () => renderProject(row.dataset.project)));
   $$('[data-project-jump]').forEach(link => link.addEventListener('click', () => renderProject(link.dataset.projectJump)));
-  $("#preview-refresh").addEventListener("click", () => renderProject($(".project-row.is-active").dataset.project));
+  $("#preview-refresh")?.addEventListener("click", () => renderProject($(".project-row.is-active").dataset.project));
   $$(".filter-button").forEach(button => button.addEventListener("click", () => filterNotes(button.dataset.filter)));
   $$(".note-open").forEach(button => button.addEventListener("click", () => openNote(button.dataset.note)));
-  $("#dialog-close").addEventListener("click", closeNote);
-  $("#note-dialog").addEventListener("click", event => { if (event.target === $("#note-dialog")) closeNote(); });
-  $("#command-open").addEventListener("click", openCommands);
-  $("#command-close").addEventListener("click", closeCommands);
+  $("#dialog-close")?.addEventListener("click", closeNote);
+  $("#note-dialog")?.addEventListener("click", event => { if (event.target === $("#note-dialog")) closeNote(); });
+  $("#command-open")?.addEventListener("click", openCommands);
+  $("#command-close")?.addEventListener("click", closeCommands);
   $$("[data-command]").forEach(button => button.addEventListener("click", () => runCommand(button.dataset.command)));
   $$('[data-scroll="top"]').forEach(button => button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" })));
+
+  const menuButton = $("#menu-open");
+  const mobileNav = $("#mobile-nav");
+  const closeMenu = () => {
+    if (!menuButton || !mobileNav) return;
+    mobileNav.hidden = true;
+    menuButton.setAttribute("aria-expanded", "false");
+    menuButton.textContent = "Menu";
+  };
+  menuButton?.addEventListener("click", () => {
+    if (!mobileNav) return;
+    const opening = mobileNav.hidden;
+    mobileNav.hidden = !opening;
+    menuButton.setAttribute("aria-expanded", String(opening));
+    menuButton.textContent = opening ? "Close" : "Menu";
+  });
+  $$("#mobile-nav a").forEach(link => link.addEventListener("click", closeMenu));
 
   document.addEventListener("keydown", event => {
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
@@ -556,12 +575,14 @@
     if (event.key === "Escape") {
       closeCommands();
       closeNote();
+      closeMenu();
     }
   });
 
   window.addEventListener("scroll", () => {
     const max = document.documentElement.scrollHeight - innerHeight;
-    $("#reading-progress").style.width = `${max > 0 ? (scrollY / max) * 100 : 0}%`;
+    const progress = $("#reading-progress");
+    if (progress) progress.style.width = `${max > 0 ? (scrollY / max) * 100 : 0}%`;
   }, { passive: true });
 
   // The hero is core content, so it must remain visible even when a browser does
