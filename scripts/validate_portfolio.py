@@ -94,13 +94,16 @@ for marker in (
  'Dev-Pandya-Negative-Yield-Debt-Presentation.pptx',
  'Historical source synthesis',
  'Dev-Pandya-Apple-Value-vs-Growth-Academic-Analysis.docx',
- 'Original DOCX · incomplete citations'):
- if marker not in home+'\n'+archive:errors.append(f'new public artifact or disclosure missing: {marker}')
-critical=['assets/Dev-Pandya-Recruiter-Portfolio-Brief.pdf','assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf','assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf','assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx','assets/models/Dev-Pandya-Take-Two-Scenario-Analysis.xlsx','assets/models/Dev-Pandya-First-Solar-Research-Audit.xlsx','assets/research/vistra-valuation-bridge.png','assets/research/take-two-scenario-ranges.png','assets/research/first-solar-dupont-audit.png','assets/credentials/Dev-Pandya-Bloomberg-Market-Concepts-Certificate.pdf','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pptx','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pdf','assets/research/Dev-Pandya-Apple-Value-vs-Growth-Academic-Analysis.docx']
+ 'Original DOCX · incomplete citations',
+ 'Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png',
+ 'SEVEN VISUAL NOTES / UPDATED JUL 28, 2026'):
+ if marker not in home+'\n'+archive+'\n'+app:errors.append(f'new public artifact or disclosure missing: {marker}')
+critical=['assets/Dev-Pandya-Recruiter-Portfolio-Brief.pdf','assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf','assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf','assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx','assets/models/Dev-Pandya-Take-Two-Scenario-Analysis.xlsx','assets/models/Dev-Pandya-First-Solar-Research-Audit.xlsx','assets/research/vistra-valuation-bridge.png','assets/research/take-two-scenario-ranges.png','assets/research/first-solar-dupont-audit.png','assets/credentials/Dev-Pandya-Bloomberg-Market-Concepts-Certificate.pdf','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pptx','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pdf','assets/research/Dev-Pandya-Apple-Value-vs-Growth-Academic-Analysis.docx','assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png']
 for rel in critical:
  p=ROOT/rel
  if not p.exists() or p.stat().st_size<1000:errors.append(f'missing/empty critical artifact: {rel}')
  elif p.suffix=='.pdf' and not p.read_bytes().startswith(b'%PDF'):errors.append(f'invalid PDF header: {rel}')
+ elif p.suffix=='.png' and not p.read_bytes().startswith(b'\x89PNG\r\n\x1a\n'):errors.append(f'invalid PNG signature: {rel}')
  elif p.suffix in {'.xlsx','.pptx','.docx'}:
   try:
    with zipfile.ZipFile(p) as z:

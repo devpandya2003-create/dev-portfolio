@@ -297,12 +297,16 @@
     },
     cfajourney: {
       index: "L—001",
-      meta: "CFA LEVEL I / PERSONAL STUDY JOURNAL / SIX VISUAL NOTES",
+      meta: "CFA LEVEL I / PERSONAL STUDY JOURNAL / SEVEN VISUAL NOTES / UPDATED JUL 28, 2026",
       title: "Building a disciplined CFA Level I study routine",
-      deck: "Six personal learning visuals connect exam preparation with study discipline, valuation concepts, and common analytical biases.",
+      deck: "Seven personal learning visuals connect exam preparation with study discipline, energy management, valuation concepts, and common analytical biases.",
       body: `
+        <h3>Latest reflection · July 28, 2026</h3>
+        <p>“Work brain and study brain are not the same brain” is a personal reflection on moving from a full internship day into evening study. The line is illustrative—not measured productivity data, medical guidance, or an exam-performance claim.</p>
+        <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" alt="Personal CFA Level I study reflection showing energy falling from a sharp 9 AM internship start to fumes by 8 PM study time"><figcaption>Today’s study reflection: learning how to arrive at the books with something left in the tank.</figcaption></figure>
+        <p><a class="report-link" href="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" target="_blank" rel="noreferrer">Open today’s visual (PNG) ↗</a></p>
         <h3>Study process</h3>
-        <p>The journal documents a personal kickoff, a month-by-month study plan, a shift from motivation toward discipline, and a routine of combining new reading with review. These are process notes—not an exam result or a claim of mastery.</p>
+        <p>The journal also documents a personal kickoff, a month-by-month study plan, a shift from motivation toward discipline, and a routine of combining new reading with review. These are process notes—not an exam result or a claim of mastery.</p>
         <div class="note-visual-grid">
           <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Level-I-Kickoff.png" alt="CFA Level I study kickoff visual with books and study notes"><figcaption>Starting the CFA Level I study journey.</figcaption></figure>
           <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Study-Discipline.png" alt="CFA study timeline from October through February"><figcaption>A personal timeline built around steady weekly progress.</figcaption></figure>
