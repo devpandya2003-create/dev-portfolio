@@ -10,7 +10,7 @@
     root.dataset.theme = resolved;
     root.dataset.themeMode = mode;
     if (themeButton) themeButton.textContent = `Theme: ${mode}`;
-    localStorage.setItem("dev-boiii-theme", mode);
+    localStorage.setItem("dev-finance-theme", mode);
   }
 
   function cycleTheme() {
@@ -26,7 +26,7 @@
     menuButton.textContent = "Menu";
   }
 
-  applyTheme(localStorage.getItem("dev-boiii-theme") || "auto");
+  applyTheme(localStorage.getItem("dev-finance-theme") || "auto");
   themeButton?.addEventListener("click", cycleTheme);
   menuButton?.addEventListener("click", () => {
     if (!mobileNav) return;

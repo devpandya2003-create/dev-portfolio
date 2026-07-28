@@ -56,7 +56,7 @@ home=(ROOT/'index.html').read_text();archive=(ROOT/'research/index.html').read_t
 selected_tokens=home.count('class="selected-card')
 if selected_tokens!=8: # card + card-head occurrence per item
  errors.append(f'homepage selected-card token count unexpected: {selected_tokens}; expected 8 tokens for 4 cards')
-if len(re.findall(r'<article class="research-row',archive))!=18:errors.append('archive must contain exactly 18 research rows')
+if len(re.findall(r'<article class="research-row',archive))!=20:errors.append('archive must contain exactly 20 research rows')
 if home.count('class="pathway-grid')!=1 or home.count('<article><span>0')<3:errors.append('role pathways missing')
 for control in ('research-search','research-sort','research-type'):
  if f'id="{control}"' not in archive:errors.append(f'archive control missing: {control}')
@@ -87,20 +87,29 @@ for rel,markers in case_sources.items():
   if marker not in text:errors.append(f'case source marker missing in {rel}: {marker}')
 for phrase in ('500+ line items','more than 50 distressed accounts'):
  if phrase not in app:errors.append(f'expected synchronized experience phrase missing: {phrase}')
-critical=['assets/Dev-Pandya-Recruiter-Portfolio-Brief.pdf','assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf','assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf','assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx','assets/models/Dev-Pandya-Take-Two-Scenario-Analysis.xlsx','assets/models/Dev-Pandya-First-Solar-Research-Audit.xlsx','assets/research/vistra-valuation-bridge.png','assets/research/take-two-scenario-ranges.png','assets/research/first-solar-dupont-audit.png']
+for marker in (
+ 'Dev-Pandya-Bloomberg-Market-Concepts-Certificate.pdf',
+ 'Bloomberg Market Concepts completed November 30, 2025',
+ 'Dev-Pandya-Negative-Yield-Debt-Presentation.pdf',
+ 'Dev-Pandya-Negative-Yield-Debt-Presentation.pptx',
+ 'Historical source synthesis',
+ 'Dev-Pandya-Apple-Value-vs-Growth-Academic-Analysis.docx',
+ 'Original DOCX · incomplete citations'):
+ if marker not in home+'\n'+archive:errors.append(f'new public artifact or disclosure missing: {marker}')
+critical=['assets/Dev-Pandya-Recruiter-Portfolio-Brief.pdf','assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf','assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf','assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx','assets/models/Dev-Pandya-Take-Two-Scenario-Analysis.xlsx','assets/models/Dev-Pandya-First-Solar-Research-Audit.xlsx','assets/research/vistra-valuation-bridge.png','assets/research/take-two-scenario-ranges.png','assets/research/first-solar-dupont-audit.png','assets/credentials/Dev-Pandya-Bloomberg-Market-Concepts-Certificate.pdf','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pptx','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pdf','assets/research/Dev-Pandya-Apple-Value-vs-Growth-Academic-Analysis.docx']
 for rel in critical:
  p=ROOT/rel
  if not p.exists() or p.stat().st_size<1000:errors.append(f'missing/empty critical artifact: {rel}')
  elif p.suffix=='.pdf' and not p.read_bytes().startswith(b'%PDF'):errors.append(f'invalid PDF header: {rel}')
- elif p.suffix=='.xlsx':
+ elif p.suffix in {'.xlsx','.pptx','.docx'}:
   try:
    with zipfile.ZipFile(p) as z:
-    if '[Content_Types].xml' not in z.namelist():errors.append(f'invalid XLSX package: {rel}')
-  except Exception as exc:errors.append(f'invalid XLSX: {rel}: {exc}')
+    if '[Content_Types].xml' not in z.namelist():errors.append(f'invalid Office package: {rel}')
+  except Exception as exc:errors.append(f'invalid Office package {rel}: {exc}')
 if not (ROOT/'projects/global-portfolio/index.html').exists():errors.append('legacy global-portfolio redirect missing')
 if errors:
  print('PORTFOLIO QUALITY GATE: FAIL')
  for e in errors:print('-',e)
  sys.exit(1)
 print('PORTFOLIO QUALITY GATE: PASS')
-print(json.dumps({'primary_pages':len(PRIMARY),'archive_rows':18,'selected_cases':4,'critical_artifacts':len(critical)},indent=2))
+print(json.dumps({'primary_pages':len(PRIMARY),'archive_rows':20,'selected_cases':4,'critical_artifacts':len(critical)},indent=2))
