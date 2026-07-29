@@ -92,9 +92,9 @@
     },
     vistrafollowup: {
       index: "ER—004",
-      meta: "VISTRA CORP / POST-REPORT TRACKING NOTE / SOURCE FILE CREATED JUL 27, 2026",
+      meta: "VISTRA CORP / POST-REPORT TRACKING NOTE / OBSERVATION DATE NOT STATED",
       title: "Vistra follow-up: fundamentals moved before the price",
-      deck: "A visual follow-up to the April 2026 report, preserved as a dated learning artifact rather than presented as a live recommendation or current quote.",
+      deck: "A visual follow-up to the April 2026 report, preserved as a learning artifact rather than presented as a live recommendation or current quote.",
       body: `
         <h3>What the follow-up tracks</h3>
         <p>The supplied visual says the business continued to report stronger fundamentals while the share price remained near $151. It lists a roughly 10% Q1 EPS beat, approximately 43% year-over-year revenue growth, record Q1 EBITDA, an investment-grade credit upgrade, and a new AI-demand joint venture involving KKR and Nvidia.</p>
@@ -103,7 +103,7 @@
         <p>The image does not state its observation date or cite the underlying filings, rating action, consensus target, or partnership announcement. The figures are therefore shown as claims in Dev’s source graphic—not as current or independently verified market data.</p>
         <blockquote>When operating evidence improves but price does not, the next question is whether the timing is early or the catalyst is wrong.</blockquote>
         <p><a class="report-link" href="assets/research/Dev-Pandya-Vistra-Followup.png" target="_blank" rel="noreferrer">Open the original Vistra follow-up (PNG) ↗</a></p>
-        <p class="boundary">EDUCATIONAL POST-REPORT TRACKING / SOURCE FILE CREATED JUL 27, 2026 / OBSERVATION DATE NOT STATED / FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
+        <p class="boundary">EDUCATIONAL POST-REPORT TRACKING / OBSERVATION DATE NOT STATED / FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
     },
     firstsolar: {
       index: "ER—002",
@@ -146,7 +146,7 @@
     },
     psychology: {
       index: "R—001",
-      meta: "EQUITIES / BEHAVIORAL FINANCE / SOURCE-CITED SYNTHESIS",
+      meta: "EQUITIES / BEHAVIORAL FINANCE / SOURCE-CITED SYNTHESIS / SYNTHESIS DATE NOT STATED",
       title: "When psychology meets market structure",
       deck: "Palm/3Com is useful precisely because the obvious pricing contradiction did not guarantee an easy, executable arbitrage.",
       body: `
@@ -175,7 +175,7 @@
     },
     derivatives: {
       index: "R—002",
-      meta: "OPTIONS & FUTURES / MARKET LIQUIDITY / PEER-REVIEWED",
+      meta: "OPTIONS & FUTURES / MARKET LIQUIDITY / PEER-REVIEWED / SUMMARY DATE NOT STATED / EXTERNAL PAPER 2024",
       title: "Corporate derivatives use and stock liquidity",
       deck: "A reported association between corporate hedging and stock liquidity is a research clue—not evidence that investors trading derivatives earn alpha.",
       body: `
@@ -199,7 +199,7 @@
     },
     backtests: {
       index: "R—003",
-      meta: "QUANT RESEARCH / TECHNICAL ANALYSIS / EXTERNAL REVIEW",
+      meta: "QUANT RESEARCH / TECHNICAL ANALYSIS / EXTERNAL REPORT OCT 2004 / SOURCE PDF CREATED OCT 11, 2004 / SUMMARY DATE NOT STATED",
       title: "Why profitable backtests can disappear",
       deck: "Positive historical findings are the start of diligence, not the end of it.",
       body: `
@@ -252,7 +252,7 @@
     },
     businessstock: {
       index: "V—003",
-      meta: "EQUITIES / EXPECTATIONS / BUSINESS QUALITY VS PRICE",
+      meta: "EQUITIES / EXPECTATIONS / BUSINESS QUALITY VS PRICE / SOURCE DATE NOT STATED",
       title: "A great business and a great stock are different bets",
       deck: "Business quality asks what the company can deliver. Investment quality also asks what the current price already assumes.",
       body: `
@@ -260,13 +260,13 @@
         <p>A good business can grow earnings, win customers, and compound over time. A good stock also requires a price that leaves room for outcomes to beat expectations. Strong reported performance can therefore coexist with a falling share price when even better news was already priced in.</p>
         <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-Great-Business-vs-Great-Stock.png" alt="Dev Pandya visual explaining the difference between a great business and a great stock"><figcaption>The graphic separates operating quality from the expectations embedded in price.</figcaption></figure>
         <h3>About the example</h3>
-        <p>The source visual uses Samsung and states that profit rose approximately 19 times year over year while the stock fell. No observation date or citation is stated in the graphic, so this portfolio treats that figure as an undated source-graphic claim—not current or independently verified market data.</p>
+        <p>The source visual uses Samsung and states that profit rose approximately 19 times year over year while the stock fell. No observation date, source date, or citation is stated in the graphic, so the figure is not presented as current or independently verified market data.</p>
         <p><a class="report-link" href="assets/research/Dev-Pandya-Great-Business-vs-Great-Stock.png" target="_blank" rel="noreferrer">Open the original expectations visual (PNG) ↗</a></p>
-        <p class="boundary">VISUAL MARKET COMMENTARY / SOURCE DATE NOT STATED / EXAMPLE NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
+        <p class="boundary">VISUAL MARKET COMMENTARY / SOURCE DATE NOT STATED / OBSERVATION DATE NOT STATED / EXAMPLE NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
     },
     tworaces: {
       index: "V—004",
-      meta: "AI INFRASTRUCTURE / FIRM POWER / LONG-DURATION STORAGE",
+      meta: "AI INFRASTRUCTURE / FIRM POWER / LONG-DURATION STORAGE / SOURCE DATE NOT STATED",
       title: "Two races, one AI power problem",
       deck: "AI infrastructure depends on both generating enough firm power and storing energy long enough to cover sustained demand.",
       body: `
@@ -280,7 +280,7 @@
     },
     readingmind: {
       index: "V—005",
-      meta: "BEHAVIORAL FINANCE / READING NOTE / EXTERNAL BOOK",
+      meta: "BEHAVIORAL FINANCE / READING NOTE DATE NOT STATED / EXTERNAL BOOK 2011",
       title: "The mind that reads the market",
       deck: "A reading note on how cognitive bias can shape an investor’s interpretation before market mechanics even enter the analysis.",
       body: `
@@ -297,14 +297,18 @@
     },
     cfajourney: {
       index: "L—001",
-      meta: "CFA LEVEL I / PERSONAL STUDY JOURNAL / SEVEN VISUAL NOTES / UPDATED JUL 28, 2026",
+      meta: "CFA LEVEL I / PERSONAL STUDY JOURNAL / EIGHT VISUAL NOTES / UPDATED JUL 29, 2026",
       title: "Building a disciplined CFA Level I study routine",
-      deck: "Seven personal learning visuals connect exam preparation with study discipline, energy management, valuation concepts, and common analytical biases.",
+      deck: "Eight personal learning visuals connect exam preparation with study discipline, energy management, valuation concepts, and common analytical biases.",
       body: `
-        <h3>Latest reflection · July 28, 2026</h3>
-        <p>“Work brain and study brain are not the same brain” is a personal reflection on moving from a full internship day into evening study. The line is illustrative—not measured productivity data, medical guidance, or an exam-performance claim.</p>
-        <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" alt="Personal CFA Level I study reflection showing energy falling from a sharp 9 AM internship start to fumes by 8 PM study time"><figcaption>Today’s study reflection: learning how to arrive at the books with something left in the tank.</figcaption></figure>
-        <p><a class="report-link" href="research/work-brain-vs-study-brain/">Read the standalone reflection ↗</a> · <a class="report-link" href="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" target="_blank" rel="noreferrer">Open today’s visual (PNG) ↗</a></p>
+        <h3>Latest reflection · July 29, 2026</h3>
+        <p>“I lowered the bar. That’s why I’m still going” is a personal reflection on protecting the evening study habit after work. The thirty-night streak is Dev’s self-report—not measured productivity data, proof of study quality, or an exam-performance claim.</p>
+        <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Protect-the-Study-Habit.png" alt="Personal CFA Level I study reflection using thirty circles to distinguish focused nights from nights when simply showing up sustained the habit"><figcaption>Latest study reflection: lowering the standard on tired nights so the habit survives them.</figcaption></figure>
+        <p><a class="report-link" href="research/protect-the-study-habit/">Read the July 29 standalone reflection ↗</a> · <a class="report-link" href="assets/research/Dev-Pandya-CFA-Protect-the-Study-Habit.png" target="_blank" rel="noreferrer">Open the latest visual (PNG) ↗</a></p>
+        <h3>Earlier reflection · July 28, 2026</h3>
+        <p>“Work brain and study brain are not the same brain” records the shift from a full internship day into evening study. It is illustrative—not measured productivity data or medical guidance.</p>
+        <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" alt="Personal CFA Level I study reflection showing energy falling from a sharp 9 AM internship start to fumes by 8 PM study time"><figcaption>Learning how to arrive at the books with something left in the tank.</figcaption></figure>
+        <p><a class="report-link" href="research/work-brain-vs-study-brain/">Read the July 28 standalone reflection ↗</a></p>
         <h3>Study process</h3>
         <p>The journal also documents a personal kickoff, a month-by-month study plan, a shift from motivation toward discipline, and a routine of combining new reading with review. These are process notes—not an exam result or a claim of mastery.</p>
         <div class="note-visual-grid">
@@ -323,7 +327,7 @@
     },
     stealthcall: {
       index: "S—001",
-      meta: "STEALTH SERIES / EARNINGS-CALL ANALYSIS / ANALYST PLAYBOOK",
+      meta: "STEALTH SERIES / EARNINGS-CALL ANALYSIS / SOURCE DATE NOT STATED / ANALYST PLAYBOOK",
       title: "How to read an earnings call like an analyst",
       deck: "A five-part checklist for reading beyond the reported numbers—while treating tone, language, and omissions as research signals rather than proof.",
       body: `
@@ -343,7 +347,7 @@
     },
     stealthomissions: {
       index: "S—002",
-      meta: "STEALTH SERIES / EARNINGS CALLS / THE ANALYST’S EYE",
+      meta: "STEALTH SERIES / EARNINGS CALLS / SOURCE DATE NOT STATED / THE ANALYST’S EYE",
       title: "What they don’t say says the most",
       deck: "A visual guide to four omissions that can justify deeper diligence without proving that management is concealing bad news.",
       body: `
@@ -362,7 +366,7 @@
     },
     stealthfunds: {
       index: "S—003",
-      meta: "STEALTH SERIES / ACTIVE MANAGEMENT / ATTRIBUTION AUDIT",
+      meta: "STEALTH SERIES / ACTIVE MANAGEMENT / ATTRIBUTION AUDIT / SOURCE DATE NOT STATED",
       title: "Why active-fund statistics need dated sources",
       deck: "A supplied graphic made numerical claims without naming a dataset, report edition, or measurement date, so the figures are excluded here rather than repeated as evidence.",
       body: `
@@ -404,7 +408,7 @@
     },
     paperlab: {
       index: "P—004",
-      meta: "RESEARCH PROCESS / EVIDENCE GAPS / PAPER-ONLY",
+      meta: "RESEARCH PROCESS / EVIDENCE GAPS / PAPER-ONLY / NOTE DATE NOT STATED",
       title: "Why missing evidence should still show as zero",
       deck: "An empty field should remain visible as a gap instead of being replaced with an assumption.",
       body: `
@@ -521,8 +525,9 @@
 
   let activeResearchTopic = "all";
   const originalResearchOrder = new Map($$(".research-row").map((row, index) => [row, index]));
+  const normalizeResearchText = value => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
   function applyResearchView() {
-    const query = ($("#research-search")?.value || "").trim().toLowerCase();
+    const query = normalizeResearchText($("#research-search")?.value || "");
     const type = $("#research-type")?.value || "all";
     const sort = $("#research-sort")?.value || "portfolio";
     const list = $(".archive-research .research-list") || $(".research-list");
@@ -536,7 +541,7 @@
     let visible = 0;
     rows.forEach(row => {
       const topicMatch = activeResearchTopic === "all" || row.dataset.topic === activeResearchTopic;
-      const textMatch = !query || row.textContent.toLowerCase().includes(query);
+      const textMatch = !query || normalizeResearchText(row.textContent).includes(query);
       const typeMatch = type === "all" || (type === "artifact" ? row.dataset.artifact === "true" : row.dataset.kind === type);
       const show = topicMatch && textMatch && typeMatch;
       row.hidden = !show;

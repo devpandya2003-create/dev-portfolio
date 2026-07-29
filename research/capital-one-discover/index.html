@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="../../">
+  <meta name="description" content="A source-cited historical case study of Capital One's fixed-exchange-ratio acquisition of Discover, with transparent deal-mechanics calculations and an auditable workbook.">
+  <meta name="theme-color" content="#04080c">
+  <link rel="canonical" href="https://devpandya.com/research/capital-one-discover/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="Capital One–Discover transaction mechanics — Dev Amit Pandya">
+  <meta property="og:description" content="Historical all-stock M&A mechanics, fixed-exchange-ratio sensitivity, official SEC citations, and an auditable workbook.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://devpandya.com/research/capital-one-discover/">
+  <meta property="og:image" content="https://devpandya.com/assets/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Capital One–Discover transaction mechanics","author":{"@type":"Person","name":"Dev Amit Pandya"},"datePublished":"2026-07-28","dateModified":"2026-07-28","url":"https://devpandya.com/research/capital-one-discover/","citation":["https://www.sec.gov/Archives/edgar/data/927628/000119312524039233/d772981d8k.htm","https://www.sec.gov/Archives/edgar/data/927628/000119312524039233/d772981dex991.htm","https://www.sec.gov/Archives/edgar/data/927628/000119312524039233/d772981dex992.htm","https://www.sec.gov/Archives/edgar/data/927628/000119312525122059/d934475d8k.htm","https://www.sec.gov/Archives/edgar/data/927628/000119312525122059/d934475dex991.htm"]}</script>
+  <title>Capital One–Discover transaction mechanics — Dev Amit Pandya</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260728c">
+  <style>@media print{html{--bg:#fff;--bg-raised:#fff;--bg-soft:#f3f5f7;--ink:#111820;--muted:#4e5b66;--faint:#6b7680;--line:rgba(17,24,32,.16);--line-strong:rgba(17,24,32,.35);--accent:#0b57d0;--accent-strong:#0847ad;--accent-ink:#fff}.site-header,.case-toc,.case-next,.site-footer,.skip-link,.case-actions{display:none!important}.case-shell{padding:0!important}.case-layout{display:block!important}.case-study{max-width:none!important;border:0!important}.case-hero,.case-body{padding:20px 30px!important}.case-section{break-inside:auto}.case-table-wrap,table,blockquote,.authorship-source-boundary{break-inside:avoid}.case-table{font-size:10px}a{text-decoration:none}body{font-size:12px;line-height:1.42}}</style>
+</head>
+<body class="case-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html#top" aria-label="Dev Amit Pandya portfolio home"><span class="brand-glyph">D</span><span class="brand-copy"><strong>DEV</strong><small>FINANCE STUDENT</small></span></a>
+    <nav class="main-nav" aria-label="Primary navigation"><a href="index.html#selected-work">Selected work</a><a href="index.html#experience">Experience</a><a href="index.html#capabilities">Capabilities</a><a href="research/">Research</a><a href="index.html#foundation">Education</a><a href="index.html#contact">Contact</a><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé</a></nav>
+    <div class="header-tools"><button class="text-button" id="theme-toggle" type="button" aria-label="Change color theme">Theme: auto</button><button class="menu-button" id="menu-open" type="button" aria-controls="mobile-nav" aria-expanded="false">Menu</button></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="index.html#selected-work">Selected work</a><a href="index.html#experience">Experience</a><a href="index.html#capabilities">Capabilities</a><a href="research/">Research</a><a href="index.html#foundation">Education</a><a href="index.html#contact">Contact</a><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn ↗</a></nav>
+  </header>
+  <main id="main" class="case-shell">
+    <header class="case-hero">
+      <p class="eyebrow">TRANSACTION ANALYSIS / HISTORICAL M&amp;A / PREPARED JUL 28, 2026</p>
+      <h1>Capital One–Discover: what a fixed exchange ratio actually transfers</h1>
+      <p class="case-deck">A source-cited reconstruction of announcement terms, deal mechanics, management targets, and the market-price risk embedded in an all-stock acquisition.</p>
+      <dl class="case-meta">
+        <div><dt>Research question</dt><dd>How did the fixed ratio allocate value and price risk?</dd></div>
+        <div><dt>Method</dt><dd>Filed terms + formula audit + sensitivity</dd></div>
+        <div><dt>Announcement basis</dt><dd>Feb 16–20, 2024</dd></div>
+        <div><dt>Completion</dt><dd>May 18, 2025</dd></div>
+        <div style="grid-column:1/-1"><dt>Recommendation</dt><dd>None; historical mechanics only</dd></div>
+      </dl>
+    </header>
+    <div class="case-layout">
+      <nav class="case-toc" aria-label="On this page"><strong>ON THIS PAGE</strong><a href="#summary">Summary</a><a href="#terms">Terms</a><a href="#mechanics">Mechanics</a><a href="#sensitivity">Sensitivity</a><a href="#targets">Targets</a><a href="#risks">Limits</a><a href="#sources">Citations</a><a href="#downloads">Downloads</a></nav>
+      <article class="case-study">
+        <div class="case-body">
+          <aside class="authorship-source-boundary"><strong>Authorship &amp; source boundary</strong><p>Analysis, calculations, and interpretation are Dev Pandya’s educational work. Transaction terms and management targets remain attributable to Capital One and Discover through the cited SEC filings. This is not a fairness opinion, merger model, current valuation, or investment recommendation.</p></aside>
+
+          <section id="summary" class="case-section">
+            <h2>Evidence status and executive summary</h2>
+            <p>Capital One announced an all-stock acquisition of Discover valued at $35.3 billion. Each Discover share was entitled to 1.0192 Capital One shares; the announcement materials described $139.86 of implied value per Discover share, a 26.6% premium to Discover’s $110.49 close on February 16, 2024, and approximate pro forma ownership of 60% for Capital One shareholders and 40% for Discover shareholders.<sup><a href="#source-2" aria-label="Source 2">[2]</a></sup><sup><a href="#source-3" aria-label="Source 3">[3]</a></sup></p>
+            <p>The central finance lesson is not the premium alone. A fixed exchange ratio fixes the number of buyer shares delivered, not their future dollar value. Between signing and closing, Discover shareholders therefore remained exposed to Capital One’s share price, subject to the merger agreement’s terms and closing conditions. The transaction was completed on May 18, 2025.<sup><a href="#source-4" aria-label="Source 4">[4]</a></sup><sup><a href="#source-5" aria-label="Source 5">[5]</a></sup></p>
+            <blockquote>In a fixed-ratio stock deal, the exchange ratio is certain; the dollar consideration is not.</blockquote>
+          </section>
+
+          <section id="terms" class="case-section">
+            <h2>Announcement terms</h2>
+            <div class="case-table-wrap"><table class="case-table"><thead><tr><th scope="col">Input</th><th scope="col">Disclosed value</th><th scope="col">Citation</th></tr></thead><tbody>
+              <tr><td>Transaction form</td><td>100% stock consideration</td><td><a href="#source-2">[2]</a>, <a href="#source-3">[3]</a></td></tr>
+              <tr><td>Headline transaction value</td><td>$35.3B</td><td><a href="#source-2">[2]</a>, <a href="#source-3">[3]</a></td></tr>
+              <tr><td>Fixed exchange ratio</td><td>1.0192 Capital One shares per Discover share</td><td><a href="#source-2">[2]</a></td></tr>
+              <tr><td>Unaffected Discover close</td><td>$110.49 on Feb 16, 2024</td><td><a href="#source-2">[2]</a></td></tr>
+              <tr><td>Implied announcement value</td><td>$139.86 per Discover share</td><td><a href="#source-3">[3]</a></td></tr>
+              <tr><td>Announced premium</td><td>26.6%</td><td><a href="#source-2">[2]</a>, <a href="#source-3">[3]</a></td></tr>
+              <tr><td>Announced ownership</td><td>Approximately 60% Capital One / 40% Discover</td><td><a href="#source-2">[2]</a>, <a href="#source-3">[3]</a></td></tr>
+            </tbody></table></div>
+          </section>
+
+          <section id="mechanics" class="case-section">
+            <h2>Reproducing the mechanics</h2>
+            <p>The calculations below use only disclosed announcement inputs. Green workbook cells contain the formulas and cached results; no market-data API or inferred share count is used.</p>
+            <div class="case-table-wrap"><table class="case-table"><thead><tr><th scope="col">Calculation</th><th scope="col">Formula</th><th scope="col">Result</th></tr></thead><tbody>
+              <tr><td>Calculated premium</td><td>($139.86 ÷ $110.49) − 1</td><td>26.58%, rounding to 26.6%</td></tr>
+              <tr><td>Implied Capital One reference price</td><td>$139.86 ÷ 1.0192</td><td>$137.23</td></tr>
+              <tr><td>Ownership check</td><td>60% + 40%</td><td>100%</td></tr>
+              <tr><td>Total management synergy target</td><td>$1.5B + $1.2B</td><td>$2.7B</td></tr>
+            </tbody></table></div>
+            <p>The back-solved $137.23 is a mechanical announcement reference price, not a current Capital One quote. The ownership percentages were disclosed as approximate, so the 100% check verifies presentation consistency rather than exact issued-share accounting.</p>
+          </section>
+
+          <section id="sensitivity" class="case-section">
+            <h2>Fixed-ratio consideration sensitivity</h2>
+            <p>Holding the 1.0192 exchange ratio and $110.49 unaffected Discover price constant illustrates the buyer-share-price exposure. These are arithmetic scenarios, not price forecasts.</p>
+            <div class="case-table-wrap"><table class="case-table"><thead><tr><th scope="col">Change from implied COF reference</th><th scope="col">Illustrative COF price</th><th scope="col">Implied DFS consideration</th><th scope="col">Premium / (discount)</th></tr></thead><tbody>
+              <tr><td>−20%</td><td>$109.78</td><td>$111.89</td><td>1.3%</td></tr>
+              <tr><td>−10%</td><td>$123.50</td><td>$125.87</td><td>13.9%</td></tr>
+              <tr><td>0%</td><td>$137.23</td><td>$139.86</td><td>26.6%</td></tr>
+              <tr><td>+10%</td><td>$150.95</td><td>$153.85</td><td>39.2%</td></tr>
+              <tr><td>+20%</td><td>$164.67</td><td>$167.83</td><td>51.9%</td></tr>
+            </tbody></table></div>
+          </section>
+
+          <section id="targets" class="case-section">
+            <h2>Management targets are not achieved results</h2>
+            <p>At announcement, management described $1.5 billion of 2027 expense synergies and $1.2 billion of 2027 network synergies, totaling $2.7 billion. It also targeted greater than 15% adjusted non-GAAP EPS accretion in 2027, 16% ROIC in 2027, and an IRR above 20%.<sup><a href="#source-2" aria-label="Source 2">[2]</a></sup><sup><a href="#source-3" aria-label="Source 3">[3]</a></sup></p>
+            <p>Those values are company forward-looking targets, not audited realizations. This case does not test post-close synergy capture, purchase-accounting marks, integration costs, capital requirements, or the company-defined non-GAAP adjustments.</p>
+          </section>
+
+          <section id="risks" class="case-section">
+            <h2>What this evidence does—and does not—support</h2>
+            <div class="case-two-col"><div><h3>Supported</h3><ul><li>Reproduction of the filed announcement terms.</li><li>Transparent premium and exchange-ratio arithmetic.</li><li>Illustration of buyer-share-price exposure.</li><li>Historical confirmation that the transaction closed.</li></ul></div><div><h3>Not supported</h3><ul><li>A fairness conclusion or independent deal recommendation.</li><li>A current valuation of Capital One or the combined company.</li><li>Verification that management targets were realized.</li><li>A full accretion/dilution, purchase-accounting, or capital model.</li></ul></div></div>
+            <h3>Thesis invalidation</h3><p>There is no security-level investment thesis to validate. The analytical conclusion would fail if the filed terms were transcribed incorrectly, if a variable-ratio or collar provision changed the consideration mechanics used here, or if management targets were mislabeled as realized outcomes. The workbook exposes each input and formula so those failure points can be checked.</p>
+          </section>
+
+          <section id="sources" class="case-section">
+            <h2>Sources and limitations</h2>
+            <h3>Official citations</h3>
+            <ol class="citation-list">
+              <li id="source-1">Capital One Financial Corporation, Form 8-K filed February 20, 2024, accession 0001193125-24-039233. <a href="https://www.sec.gov/Archives/edgar/data/927628/000119312524039233/d772981d8k.htm" target="_blank" rel="noreferrer">SEC filing ↗</a></li>
+              <li id="source-2">Capital One, “Capital One to Acquire Discover,” Exhibit 99.1 to the February 20, 2024 Form 8-K. <a href="https://www.sec.gov/Archives/edgar/data/927628/000119312524039233/d772981dex991.htm" target="_blank" rel="noreferrer">Filed announcement ↗</a></li>
+              <li id="source-3">Capital One, investor presentation dated February 20, 2024, Exhibit 99.2 to Form 8-K. <a href="https://www.sec.gov/Archives/edgar/data/927628/000119312524039233/d772981dex992.htm" target="_blank" rel="noreferrer">Filed presentation ↗</a></li>
+              <li id="source-4">Capital One Financial Corporation, Form 8-K filed May 19, 2025, accession 0001193125-25-122059. <a href="https://www.sec.gov/Archives/edgar/data/927628/000119312525122059/d934475d8k.htm" target="_blank" rel="noreferrer">SEC closing filing ↗</a></li>
+              <li id="source-5">Capital One, “Capital One Completes Acquisition of Discover,” dated May 18, 2025, Exhibit 99.1 to the May 19, 2025 Form 8-K. <a href="https://www.sec.gov/Archives/edgar/data/927628/000119312525122059/d934475dex991.htm" target="_blank" rel="noreferrer">Filed completion release ↗</a></li>
+            </ol>
+            <p>Information cutoff: May 18, 2025 for completion status. Prepared July 28, 2026. No post-close performance or current market data is analyzed.</p>
+          </section>
+
+          <section id="downloads" class="case-section">
+            <h2>Research artifacts</h2>
+            <div class="case-actions"><a class="button button-primary" href="assets/research/Dev-Pandya-Capital-One-Discover-Transaction-Mechanics.pdf" target="_blank" rel="noreferrer">Cited paper PDF ↗</a><a class="button button-quiet" href="assets/models/Dev-Pandya-Capital-One-Discover-Transaction-Mechanics.xlsx" download>Formula workbook XLSX ↓</a></div>
+          </section>
+          <p class="boundary">HISTORICAL EDUCATIONAL TRANSACTION ANALYSIS / OFFICIAL SEC SOURCES / NO CURRENT MARKET DATA / NOT A FAIRNESS OPINION / NOT INVESTMENT ADVICE</p>
+        </div>
+      </article>
+    </div>
+    <nav class="case-next" aria-label="Case study navigation"><a href="research/global-portfolio/">← Global portfolio</a><a href="research/">All research ↑</a><a href="research/first-solar/">First Solar →</a></nav>
+  </main>
+  <footer class="site-footer section-shell"><div><span class="brand-glyph">D</span><p><strong>Dev Amit Pandya</strong><br>M.S. Finance student · Boston, MA</p></div><div class="footer-meta"><a href="mailto:devpandya2003@gmail.com">Email</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn</a><span>DATED RESEARCH · NOT ADVICE</span><span id="local-time">LOCAL TIME —:—</span></div><button class="back-top" type="button" data-scroll="top">Back to top ↑</button></footer>
+  <script src="assets/case.js" defer></script>
+</body>
+</html>
