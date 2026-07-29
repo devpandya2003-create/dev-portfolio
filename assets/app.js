@@ -92,7 +92,7 @@
     },
     vistrafollowup: {
       index: "ER—004",
-      meta: "VISTRA CORP / POST-REPORT TRACKING NOTE / SOURCE DATE NOT STATED",
+      meta: "VISTRA CORP / POST-REPORT TRACKING NOTE / SOURCE FILE CREATED JUL 27, 2026",
       title: "Vistra follow-up: fundamentals moved before the price",
       deck: "A visual follow-up to the April 2026 report, preserved as a dated learning artifact rather than presented as a live recommendation or current quote.",
       body: `
@@ -103,13 +103,13 @@
         <p>The image does not state its observation date or cite the underlying filings, rating action, consensus target, or partnership announcement. The figures are therefore shown as claims in Dev’s source graphic—not as current or independently verified market data.</p>
         <blockquote>When operating evidence improves but price does not, the next question is whether the timing is early or the catalyst is wrong.</blockquote>
         <p><a class="report-link" href="assets/research/Dev-Pandya-Vistra-Followup.png" target="_blank" rel="noreferrer">Open the original Vistra follow-up (PNG) ↗</a></p>
-        <p class="boundary">EDUCATIONAL POST-REPORT TRACKING / SOURCE DATE NOT STATED / FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
+        <p class="boundary">EDUCATIONAL POST-REPORT TRACKING / SOURCE FILE CREATED JUL 27, 2026 / OBSERVATION DATE NOT STATED / FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
     },
     firstsolar: {
       index: "ER—002",
-      meta: "FIRST SOLAR / NYSE: FSLR / SELL-SIDE-STYLE EQUITY REPORT",
+      meta: "FIRST SOLAR / NYSE: FSLR / DOCUMENT MODIFIED MAR 19, 2026",
       title: "First Solar: domestic manufacturing and policy tailwinds",
-      deck: "The source report assigns a BUY at $198.815 with a $250 target and 25.7% projected upside; the document does not state a publication date.",
+      deck: "The source report assigns a BUY at $198.815 with a $250 target and 25.7% projected upside. Internal metadata records a March 19, 2026 modification date, but the document does not state a publication date.",
       body: `
         <h3>Investment case in the report</h3>
         <p>The analysis focuses on First Solar’s cadmium-telluride thin-film technology, contracted backlog, U.S. manufacturing position, policy support, earnings growth, and domestic supply-chain advantage.</p>
@@ -123,7 +123,7 @@
         <h3>Risks identified</h3>
         <p>The report highlights policy dependence, supply disruption, global module-price competition, manufacturing capital expenditure, backlog execution, and substitute-technology risk.</p>
         <p><a class="report-link" href="assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf" target="_blank" rel="noreferrer">Open the normalized First Solar brief (PDF) ↗</a></p>
-        <p class="boundary">INDEPENDENT EDUCATIONAL RESEARCH / SOURCE DOCUMENT HAS NO STATED REPORT DATE / NOT CURRENT MARKET DATA / NOT INVESTMENT ADVICE</p>`
+        <p class="boundary">INDEPENDENT EDUCATIONAL RESEARCH / DOCUMENT MODIFIED MAR 19, 2026 / PUBLICATION DATE NOT STATED / NOT CURRENT MARKET DATA / NOT INVESTMENT ADVICE</p>`
     },
     ttwo: {
       index: "ER—003",
@@ -223,7 +223,7 @@
     },
     aiipo: {
       index: "V—001",
-      meta: "CAPITAL MARKETS / AI IPO CAROUSEL / 6 SLIDES",
+      meta: "CAPITAL MARKETS / AI IPO CAROUSEL / 6 SLIDES / PDF CREATED JUL 14, 2026",
       title: "AI IPOs and Wall Street dependence",
       deck: "A visual thesis asking whether AI companies framed as financial-sector disruptors still depend on underwriting banks to reach public-market liquidity.",
       body: `
@@ -231,14 +231,14 @@
         <p>The carousel argues that AI firms may remove intermediaries from parts of dealmaking while still relying on investment banks for IPO execution, distribution, and liquidity. It frames that tension as simultaneous disruption and dependence.</p>
         <figure class="note-visual-frame"><img src="assets/research/Dev-Pandya-AI-IPO-Carousel-Cover.webp" alt="Cover of Dev Pandya’s six-slide AI IPO and Wall Street carousel"><figcaption>Cover from the supplied six-slide carousel.</figcaption></figure>
         <h3>Examples used</h3>
-        <p>The source graphics cite Anthropic, OpenAI, and SpaceX alongside reported or illustrative valuations and banking relationships. Those figures are claims in the supplied, undated carousel; this portfolio does not represent them as current or independently verified.</p>
+        <p>The source graphics cite Anthropic, OpenAI, and SpaceX alongside reported or illustrative valuations and banking relationships. The PDF’s embedded metadata records a July 14, 2026 creation date; the figures are not represented here as current or independently verified.</p>
         <blockquote>Can a company disrupt finance and still need Wall Street to become liquid?</blockquote>
         <p><a class="report-link" href="assets/research/Dev-Pandya-AI-IPO-Carousel.pdf" target="_blank" rel="noreferrer">Open the complete six-slide carousel (PDF) ↗</a></p>
-        <p class="boundary">VISUAL CAPITAL-MARKETS COMMENTARY / SOURCE DATE NOT STATED / REPORTED FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
+        <p class="boundary">VISUAL CAPITAL-MARKETS COMMENTARY / PDF CREATED JUL 14, 2026 / REPORTED FIGURES NOT PRESENTED AS CURRENT / NOT INVESTMENT ADVICE</p>`
     },
     dcfcomps: {
       index: "V—002",
-      meta: "VALUATION / DCF / TRADING COMPARABLES",
+      meta: "VALUATION / DCF / TRADING COMPARABLES / SOURCE FILE CREATED JUL 20, 2026",
       title: "DCF versus trading comparables",
       deck: "Both are standard valuation tools, but each can mislead in a different place.",
       body: `
@@ -248,7 +248,7 @@
         <h3>The practical conclusion</h3>
         <p>The visual does not declare a winner. It argues for running both methods and investigating the assumptions behind the gap when their answers diverge.</p>
         <p><a class="report-link" href="assets/research/Dev-Pandya-DCF-vs-Comps.png" target="_blank" rel="noreferrer">Open the original valuation visual (PNG) ↗</a></p>
-        <p class="boundary">EDUCATIONAL VALUATION EXPLAINER / METHOD COMPARISON / NOT A SECURITY RECOMMENDATION</p>`
+        <p class="boundary">EDUCATIONAL VALUATION EXPLAINER / SOURCE FILE CREATED JUL 20, 2026 / METHOD COMPARISON / NOT A SECURITY RECOMMENDATION</p>`
     },
     businessstock: {
       index: "V—003",
@@ -304,7 +304,7 @@
         <h3>Latest reflection · July 28, 2026</h3>
         <p>“Work brain and study brain are not the same brain” is a personal reflection on moving from a full internship day into evening study. The line is illustrative—not measured productivity data, medical guidance, or an exam-performance claim.</p>
         <figure class="note-visual-frame note-visual-light"><img loading="lazy" src="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" alt="Personal CFA Level I study reflection showing energy falling from a sharp 9 AM internship start to fumes by 8 PM study time"><figcaption>Today’s study reflection: learning how to arrive at the books with something left in the tank.</figcaption></figure>
-        <p><a class="report-link" href="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" target="_blank" rel="noreferrer">Open today’s visual (PNG) ↗</a></p>
+        <p><a class="report-link" href="research/work-brain-vs-study-brain/">Read the standalone reflection ↗</a> · <a class="report-link" href="assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png" target="_blank" rel="noreferrer">Open today’s visual (PNG) ↗</a></p>
         <h3>Study process</h3>
         <p>The journal also documents a personal kickoff, a month-by-month study plan, a shift from motivation toward discipline, and a routine of combining new reading with review. These are process notes—not an exam result or a claim of mastery.</p>
         <div class="note-visual-grid">

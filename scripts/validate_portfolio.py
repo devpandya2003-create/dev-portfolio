@@ -3,9 +3,9 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse
-import json,re,sys,zipfile
+import json,re,struct,sys,zipfile
 ROOT=Path(__file__).resolve().parents[1]
-PRIMARY=[ROOT/'index.html',ROOT/'research/index.html',ROOT/'research/vistra/index.html',ROOT/'research/take-two/index.html',ROOT/'research/first-solar/index.html',ROOT/'research/global-portfolio/index.html',ROOT/'404.html']
+PRIMARY=[ROOT/'index.html',ROOT/'research/index.html',ROOT/'research/vistra/index.html',ROOT/'research/take-two/index.html',ROOT/'research/first-solar/index.html',ROOT/'research/global-portfolio/index.html',ROOT/'research/work-brain-vs-study-brain/index.html',ROOT/'404.html']
 errors=[]
 class Parser(HTMLParser):
  def __init__(self):
@@ -52,7 +52,7 @@ for page in PRIMARY:
   for phrase in ('Evidence status','Thesis invalidation','Sources and limitations','NOT INVESTMENT ADVICE'):
    if phrase.lower() not in text.lower():errors.append(f'{page.relative_to(ROOT)} missing case field: {phrase}')
 
-home=(ROOT/'index.html').read_text();archive=(ROOT/'research/index.html').read_text();app=(ROOT/'assets/app.js').read_text();site_text='\n'.join(p.read_text(errors='ignore') for p in ROOT.rglob('*') if p.is_file() and p.suffix.lower() in {'.html','.js','.css'})
+home=(ROOT/'index.html').read_text();archive=(ROOT/'research/index.html').read_text();app=(ROOT/'assets/app.js').read_text();post=(ROOT/'research/work-brain-vs-study-brain/index.html').read_text();site_text='\n'.join(p.read_text(errors='ignore') for p in ROOT.rglob('*') if p.is_file() and p.suffix.lower() in {'.html','.js','.css'})
 selected_tokens=home.count('class="selected-card')
 if selected_tokens!=8: # card + card-head occurrence per item
  errors.append(f'homepage selected-card token count unexpected: {selected_tokens}; expected 8 tokens for 4 cards')
@@ -98,6 +98,33 @@ for marker in (
  'Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png',
  'SEVEN VISUAL NOTES / UPDATED JUL 28, 2026'):
  if marker not in home+'\n'+archive+'\n'+app:errors.append(f'new public artifact or disclosure missing: {marker}')
+for marker in (
+ 'https://devpandya.com/research/work-brain-vs-study-brain/',
+ '<meta property="article:published_time" content="2026-07-28">',
+ 'Accessible transcript',
+ 'CFA Level I · The honest part',
+ 'No exam-result or productivity claim',
+ 'NO CFA INSTITUTE ENDORSEMENT'):
+ if marker not in post:errors.append(f'standalone study reflection missing marker: {marker}')
+if home.count('class="latest-update reveal"')!=1:errors.append('homepage must contain exactly one latest-update feature')
+if 'href="research/work-brain-vs-study-brain/"' not in home:errors.append('homepage latest update must link to standalone post')
+if len(re.findall(r'<article class="research-row',home))!=6:errors.append('homepage research preview must remain exactly six rows')
+for marker in (
+ 'Source file created Jul 27, 2026',
+ 'Source file created Jul 20, 2026',
+ 'PDF created Jul 14, 2026',
+ 'Document modified Mar 19, 2026',
+ 'Publication date not stated'):
+ if marker not in home+'\n'+archive+'\n'+app+'\n'+(ROOT/'research/first-solar/index.html').read_text():errors.append(f'provenance label missing: {marker}')
+if 'CFA LEVEL 1' in site_text.upper():errors.append('Arabic CFA Level 1 wording remains in public text; use CFA Level I')
+study_png=ROOT/'assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png'
+if study_png.exists():
+ with study_png.open('rb') as f:
+  header=f.read(24)
+ if len(header)<24 or header[:8]!=b'\x89PNG\r\n\x1a\n':errors.append('study reflection PNG header invalid')
+ else:
+  width,height=struct.unpack('>II',header[16:24])
+  if (width,height)!=(1080,1080):errors.append(f'study reflection dimensions changed: {(width,height)}')
 critical=['assets/Dev-Pandya-Recruiter-Portfolio-Brief.pdf','assets/research/Dev-Pandya-Take-Two-Equity-Research.pdf','assets/research/Dev-Pandya-First-Solar-Research-Brief.pdf','assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx','assets/models/Dev-Pandya-Take-Two-Scenario-Analysis.xlsx','assets/models/Dev-Pandya-First-Solar-Research-Audit.xlsx','assets/research/vistra-valuation-bridge.png','assets/research/take-two-scenario-ranges.png','assets/research/first-solar-dupont-audit.png','assets/credentials/Dev-Pandya-Bloomberg-Market-Concepts-Certificate.pdf','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pptx','assets/research/Dev-Pandya-Negative-Yield-Debt-Presentation.pdf','assets/research/Dev-Pandya-Apple-Value-vs-Growth-Academic-Analysis.docx','assets/research/Dev-Pandya-CFA-Work-Brain-vs-Study-Brain.png']
 for rel in critical:
  p=ROOT/rel
