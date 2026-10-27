@@ -20,39 +20,140 @@
   <link rel="stylesheet" href="assets/styles.css?v=20260728b">
 <link rel="preload" href="assets/fonts/dm-serif-display-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/editorial.css?v=20261027a">
+  <link rel="stylesheet" href="assets/market.css?v=20261027b">
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main">Skip to content</a><div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Dev Amit Pandya portfolio home"><span class="brand-glyph">D</span><span class="brand-copy"><strong>DEV</strong><small>FINANCE STUDENT</small></span></a>
-    <nav class="main-nav" id="desktop-navigation" aria-label="Primary navigation"><a href="#selected-work">Selected work</a><a href="#leadership">Leadership</a><a href="#experience">Experience</a><a href="research/">Research</a><a href="#foundation">Education</a><a href="#contact">Contact</a></nav>
+    <a class="brand" href="#top" aria-label="Dev Amit Pandya portfolio home"><span class="brand-glyph">D</span><span class="brand-copy"><strong>DEV PANDYA</strong><small>FINANCE + INITIATIVE</small></span></a>
+    <nav class="main-nav" id="desktop-navigation" aria-label="Primary navigation"><a href="#explore">The desk</a><a href="#selected-work">Research</a><a href="#leadership">Leadership</a><a href="#experience">Experience</a><a href="research/">Archive</a><a href="#foundation">Education</a><a href="#contact">Contact</a></nav>
     <div class="header-tools">
+      <button class="motion-button" id="motion-toggle" type="button" aria-pressed="true" aria-label="Toggle background and interface motion">Motion on</button>
       <button class="text-button" id="theme-toggle" type="button" aria-label="Change color theme">Theme: auto</button>
       <button class="key-button" id="command-open" type="button" aria-label="Open command palette"><kbd>⌘</kbd><kbd>K</kbd></button>
       <button class="menu-button" id="menu-open" type="button" aria-controls="mobile-nav" aria-expanded="false">Menu</button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#selected-work">Selected work</a><a href="#leadership">Leadership &amp; campus projects</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="research/">Research</a><a href="#foundation">Education</a><a href="#contact">Contact</a><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <button type="button" data-theme-cycle>Change color theme</button><a href="#explore">Interactive desk</a><a href="#challenge">Analyst challenge</a><a href="#selected-work">Selected work</a><a href="#leadership">Leadership &amp; campus projects</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="research/">Archive</a><a href="#foundation">Education</a><a href="#contact">Contact</a><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
     </nav>
   </header>
   <main id="main">
-    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
-      <div class="hero-main reveal">
-        <p class="eyebrow">BOSTON, MA · FINANCE, RESEARCH &amp; LEADERSHIP</p>
-        <h1 id="hero-title">Dev Amit <br><em>Pandya.</em></h1>
-        <p class="hero-statement">An analyst’s curiosity.<br>A builder’s initiative.</p>
-        <p class="hero-deck" id="hero-introduction">I’m Dev Amit Pandya, an M.S. Finance student at UMass Boston, Investment Club President, and Accounting &amp; Finance Teaching Assistant. I connect investment research with hands-on projects for my university community.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#selected-work">Explore my research <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="#leadership">Leadership &amp; projects <span aria-hidden="true">↗</span></a></div>
-        <div class="hero-secondary-links"><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Download résumé ↗</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></div>
-        <div class="role-list" aria-label="Finance focus areas"><span>Valuation</span><span>Investment Research</span><span>Credit Analysis</span><span>Portfolio &amp; Risk</span></div>
+    <section class="hero market-hero" id="top" aria-labelledby="hero-title">
+      <div class="market-ambient" aria-hidden="true">
+        <div class="ambient-grid"></div><div class="ambient-light light-one"></div><div class="ambient-light light-two"></div>
+        <svg class="market-ribbons" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+          <path class="ribbon ribbon-one" d="M-100 760C180 810 240 350 570 420S990 850 1270 280S1530 210 1740 60"/>
+          <path class="ribbon ribbon-two" d="M-100 800C220 850 300 400 620 470S1040 900 1320 330S1590 260 1800 110"/>
+          <path class="ribbon ribbon-three" d="M-120 840C220 880 350 460 660 520S1090 940 1370 380S1640 310 1830 160"/>
+        </svg>
       </div>
-      <aside class="candidate-brief reveal" aria-labelledby="brief-title">
-        <div class="brief-head"><span>AT A GLANCE / UMASS BOSTON</span><i aria-hidden="true"></i></div>
-        <div class="brief-intro"><p class="eyebrow">FINANCE MEETS INITIATIVE</p><h2 id="brief-title">Research carefully.<br>Take the lead.<br>Build something useful.</h2></div>
-        <dl class="brief-rows"><div><dt>Studying</dt><dd>M.S. Finance · expected May 2027</dd></div><div><dt>Leading</dt><dd><a href="#investment-club-role">Investment Club President ↗</a></dd></div><div><dt>Teaching</dt><dd><a href="#teaching-assistant-role">Accounting &amp; Finance TA ↗</a></dd></div><div><dt>Researching</dt><dd>Valuation, equities, credit &amp; portfolio risk</dd></div></dl>
-        <p class="brief-note">From investment questions to campus projects—turning learning into practical work.</p>
-        <div class="brief-art" aria-hidden="true"><img src="assets/haikei-campus-wave.svg" width="900" height="600" alt="" role="presentation" aria-hidden="true" decoding="async"></div>
-      </aside>
+      <div class="section-shell market-hero-inner">
+        <div class="hero-main reveal">
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span> FINANCE MINDSET. BUILDER INSTINCT.</p>
+          <h1 id="hero-title">Dev Amit <br><em>Pandya.</em></h1>
+          <p class="hero-statement">Research the business.<br>Build the next chapter.</p>
+          <p class="hero-deck" id="hero-introduction">M.S. Finance at UMass Boston. Investment Club President. Accounting &amp; Finance Teaching Assistant. Explore the research, experience, and initiative behind the profile.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#explore">Enter the research desk <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#challenge">Play the analyst challenge <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-secondary-links">
+            <button type="button" data-profile-open>Just the essentials ↗</button>
+            <a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+            <a href="mailto:devpandya2003@gmail.com">Let’s connect ↗</a>
+          </div>
+          <p class="hero-fineprint">Explore like an analyst. No game required. No live market feed.</p>
+        </div>
+        <div class="signal-system reveal" aria-label="Choose a part of Dev’s portfolio">
+          <div class="signal-orbit orbit-one" aria-hidden="true"></div>
+          <div class="signal-orbit orbit-two" aria-hidden="true"></div>
+          <div class="signal-orbit orbit-three" aria-hidden="true"></div>
+          <div class="signal-crosshair" aria-hidden="true"></div>
+          <button class="signal-center" type="button" data-profile-open aria-label="Open Dev’s quick profile"><span>DP</span><small>THE PERSON<br>BEHIND THE THESIS</small></button>
+          <a class="signal-node signal-research" href="#explore" data-desk-jump="research"><span>01</span><strong>Research</strong><small>From thesis to evidence</small><b aria-hidden="true">↗</b></a>
+          <a class="signal-node signal-experience" href="#explore" data-desk-jump="experience"><span>02</span><strong>Experience</strong><small>Credit, costs &amp; reporting</small><b aria-hidden="true">↗</b></a>
+          <a class="signal-node signal-leadership" href="#explore" data-desk-jump="leadership"><span>03</span><strong>Leadership</strong><small>Initiative beyond class</small><b aria-hidden="true">↗</b></a>
+          <p class="signal-caption"><span aria-hidden="true">⌖</span> PICK A SIGNAL. OPEN THE STORY.</p>
+        </div>
+      </div>
+      <div class="portfolio-ticker" aria-label="Portfolio focus areas">
+        <div class="ticker-track"><span>VALUATION <b>DCF + COMPS</b></span><span>RESEARCH <b>THESIS → EVIDENCE</b></span><span>RISK <b>SCENARIOS, NOT CERTAINTY</b></span><span>LEADERSHIP <b>UMASS BOSTON</b></span><span>BUILDING <b>CAMPUS INITIATIVES</b></span><span aria-hidden="true">VALUATION <b>DCF + COMPS</b></span><span aria-hidden="true">RESEARCH <b>THESIS → EVIDENCE</b></span><span aria-hidden="true">RISK <b>SCENARIOS, NOT CERTAINTY</b></span><span aria-hidden="true">LEADERSHIP <b>UMASS BOSTON</b></span><span aria-hidden="true">BUILDING <b>CAMPUS INITIATIVES</b></span></div>
+      </div>
+    </section>
+    <section class="desk-section section-shell" id="explore" aria-labelledby="desk-heading">
+      <header class="section-heading reveal"><div><p class="eyebrow">01 / THE INTERACTIVE RESEARCH DESK</p><h2 id="desk-heading">Don’t just scroll.<br>Follow your curiosity.</h2></div><p>Choose your lens, open a research ticker, or trace my experience. The interface changes; the evidence stays accessible.</p></header>
+      <div class="audience-controls reveal"><span>YOUR LENS</span><div role="group" aria-label="Choose how to explore"><button type="button" data-audience="analyst" aria-pressed="true">Analyst</button><button type="button" data-audience="investor" aria-pressed="false">Investor</button><button type="button" data-audience="recruiter" aria-pressed="false">Recruiter</button></div><p id="audience-note">Start with the thesis. Open the assumptions, models, and limitations.</p></div>
+      <div class="research-desk reveal">
+        <aside class="desk-sidebar"><div class="desk-wordmark"><span>DP</span> / EXPLORER</div>
+          <div class="desk-tabs" role="tablist" aria-label="Portfolio explorer" aria-orientation="vertical">
+            <button type="button" id="desk-tab-research" role="tab" aria-selected="true" aria-controls="desk-panel-research" tabindex="0" data-desk-tab="research"><span>01</span> Research <b aria-hidden="true">↗</b></button>
+            <button type="button" id="desk-tab-experience" role="tab" aria-selected="false" aria-controls="desk-panel-experience" tabindex="-1" data-desk-tab="experience"><span>02</span> Experience <b aria-hidden="true">↗</b></button>
+            <button type="button" id="desk-tab-leadership" role="tab" aria-selected="false" aria-controls="desk-panel-leadership" tabindex="-1" data-desk-tab="leadership"><span>03</span> Leadership <b aria-hidden="true">↗</b></button>
+            <button type="button" id="desk-tab-process" role="tab" aria-selected="false" aria-controls="desk-panel-process" tabindex="-1" data-desk-tab="process"><span>04</span> My process <b aria-hidden="true">↗</b></button>
+          </div>
+          <button class="desk-profile-link" type="button" data-profile-open>Quick profile <span aria-hidden="true">↗</span></button>
+          <div class="desk-sidebar-note"><span class="signal-dot" aria-hidden="true"></span><p>Personal portfolio.<br>Real work. Dated sources.<br>Not a market terminal.</p></div>
+        </aside>
+        <div class="desk-workspace">
+          <div class="desk-chrome"><span><i aria-hidden="true"></i> DEV / PORTFOLIO EXPLORER</span><span>CLICK TO INVESTIGATE</span></div>
+          <section id="desk-panel-research" class="desk-panel" role="tabpanel" aria-labelledby="desk-tab-research" tabindex="0">
+            <div class="desk-case-tabs" role="group" aria-label="Choose a dated research case"><button type="button" data-desk-case="vistra" aria-pressed="true">VST <small>POWER</small></button><button type="button" data-desk-case="ttwo" aria-pressed="false">TTWO <small>INTERACTIVE</small></button><button type="button" data-desk-case="firstsolar" aria-pressed="false">FSLR <small>SOLAR</small></button></div>
+            <div class="desk-case-heading"><div><p class="eyebrow" id="desk-case-date">Report · April 4, 2026</p><h3 id="desk-case-title">Vistra investment thesis</h3></div><span class="desk-tag">EDUCATIONAL RESEARCH</span></div>
+            <p class="desk-copy" id="desk-case-copy">A catalyst-led power thesis. Follow the business, valuation assumptions, and risks—not a live share price.</p>
+            <figure class="desk-chart"><img id="desk-case-image" src="assets/research/vistra-valuation-bridge.png" alt="Valuation bridge from the dated Vistra research workbook" loading="lazy" decoding="async"><figcaption>From the linked research workbook · dated analysis, not a current quote or recommendation</figcaption></figure>
+            <dl class="desk-facts"><div><dt>Method</dt><dd id="desk-case-method">DCF + trading comparables</dd></div><div><dt>Question</dt><dd id="desk-case-question">Fundamentals versus expectations</dd></div><div><dt>Risk lens</dt><dd id="desk-case-risk">Catalyst timing + valuation</dd></div></dl>
+            <div class="desk-actions"><a class="button button-primary" id="desk-case-link" href="research/vistra/">Open the full case ↗</a><a class="desk-text-link" id="desk-model-link" href="assets/models/Dev-Pandya-Vistra-Valuation-Bridge.xlsx" download>Inspect the workbook ↓</a></div>
+          </section>
+          <section id="desk-panel-experience" class="desk-panel" role="tabpanel" aria-labelledby="desk-tab-experience" tabindex="0" hidden>
+            <p class="eyebrow">EXPERIENCE / SELECT A CHAPTER</p><h3 class="desk-panel-title">Different desks. The same attention to detail.</h3>
+            <div class="career-track" role="group" aria-label="Internship timeline"><button type="button" data-career="reliancesecretarial" aria-pressed="false"><b>2022</b><span>Corporate records</span></button><button type="button" data-career="relianceops" aria-pressed="false"><b>2023</b><span>Distressed accounts</span></button><button type="button" data-career="mindox" aria-pressed="false"><b>2024</b><span>Cost accounting</span></button><button type="button" data-career="mattson" aria-pressed="true"><b>2026</b><span>Credit &amp; reporting</span></button></div>
+            <div class="career-detail"><p class="eyebrow" id="career-role">Finance &amp; Accounting Intern</p><h4 id="career-title">Mattson Technology</h4><p id="career-location">Fremont, CA · June–September 2026</p><p id="career-copy">Customer creditworthiness, financial-statement review, production costs, month-end close, and internal reporting. I also helped streamline recurring finance analysis through AI-assisted process automation.</p><ul id="career-skills"><li>Credit review</li><li>Cost analysis</li><li>Reporting support</li></ul></div>
+            <a class="desk-text-link" href="#experience">Explore the detailed experience record ↓</a>
+          </section>
+          <section id="desk-panel-leadership" class="desk-panel" role="tabpanel" aria-labelledby="desk-tab-leadership" tabindex="0" hidden>
+            <p class="eyebrow">LEADERSHIP / CURRENT ROLES, DEVELOPING INITIATIVES</p><h3 class="desk-panel-title">Finance is a team activity.</h3>
+            <div class="desk-role-grid"><article><span>LEADING</span><h4>Investment Club President</h4><p>UMass Boston</p></article><article><span>TEACHING</span><h4>Accounting &amp; Finance Teaching Assistant</h4><p>UMass Boston</p></article></div>
+            <div class="desk-build-list"><div><strong>Investment Club website</strong><span>Co-developing with a friend · in development</span></div><div><strong>University-level investment competition</strong><span>Developing the competition and preparing to lead it · in planning</span></div><div><strong>Departmental alumni database</strong><span>In development · planned check every two weeks</span></div></div>
+            <a class="desk-text-link" href="#leadership">Open the full leadership &amp; projects section ↓</a>
+          </section>
+          <section id="desk-panel-process" class="desk-panel" role="tabpanel" aria-labelledby="desk-tab-process" tabindex="0" hidden>
+            <p class="eyebrow">HOW I THINK / EVIDENCE BEFORE CONVICTION</p><h3 class="desk-panel-title">A thesis needs a way to be wrong.</h3>
+            <div class="process-grid"><article><b>01</b><h4>Find the evidence.</h4><p>Start with dated sources and distinguish facts from interpretation.</p></article><article><b>02</b><h4>Make assumptions visible.</h4><p>Open the model, scenarios, and variables that drive the conclusion.</p></article><article><b>03</b><h4>Look for the downside.</h4><p>Study timing, balance-sheet risk, and competing explanations.</p></article><article><b>04</b><h4>State what changes the view.</h4><p>A useful thesis identifies what would invalidate it.</p></article></div>
+            <a class="desk-text-link" href="#process">Read the full research process ↓</a>
+          </section>
+        </div>
+      </div>
+      <noscript><p>Interactive controls need JavaScript. Your information is not locked: <a href="#selected-work">research</a>, <a href="#experience">experience</a>, <a href="#leadership">leadership</a>, and <a href="assets/Dev-Amit-Pandya-Resume.pdf">résumé</a> remain available.</p></noscript>
+    </section>
+    <dialog class="profile-dialog" id="profile-dialog" aria-labelledby="profile-title"><div class="profile-shell"><header><span>DP / QUICK PROFILE</span><button type="button" data-profile-close aria-label="Close quick profile">Close ×</button></header><p class="eyebrow">NO QUEST REQUIRED</p><h2 id="profile-title">Dev Amit Pandya.</h2><p class="profile-intro">Finance student. Researcher. Campus leader. Hands-on builder.</p><dl><div><dt>Education</dt><dd>M.S. Finance, UMass Boston · expected May 2027</dd></div><div><dt>Leadership</dt><dd>Investment Club President, UMass Boston</dd></div><div><dt>Academic role</dt><dd>Teaching Assistant, Accounting &amp; Finance</dd></div><div><dt>Earlier degree</dt><dd>B.B.A. Finance, Ahmedabad University · completed May 2025</dd></div><div><dt>Location</dt><dd>Boston, MA</dd></div></dl><div class="profile-actions"><a class="button button-primary" href="assets/Dev-Amit-Pandya-Resume.pdf" download>Download résumé ↓</a><a class="button button-quiet" href="mailto:devpandya2003@gmail.com">Email Dev ↗</a><a class="desk-text-link" href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></dialog>
+    <section class="challenge-section section-shell" id="challenge" aria-labelledby="challenge-heading">
+      <header class="section-heading reveal">
+        <div><p class="eyebrow">02 / THE ANALYST CHALLENGE</p><h2 id="challenge-heading">A little due diligence.<br>A different introduction.</h2></div>
+        <p>Three finance questions. Three chapters of my story. Try the interactive route—or skip straight to the essentials. Nothing on this site is locked behind a score.</p>
+      </header>
+      <div class="challenge-layout reveal">
+        <div class="challenge-console">
+          <div class="challenge-console-top"><span>THINK LIKE AN ANALYST</span><span>OPTIONAL · NO TIMER</span></div>
+          <div class="challenge-progress-row"><label for="challenge-progress">Your checks completed</label><span id="challenge-count">0 / 3</span></div>
+          <progress id="challenge-progress" value="0" max="3">0 of 3 checks completed</progress>
+          <div id="challenge-question-wrapper">
+            <p class="eyebrow" id="challenge-step">CHECK 1 / 3 · VALUATION</p>
+            <h3 id="challenge-question" tabindex="-1">Same positive future cash flow. Higher discount rate. What happens to present value?</h3>
+            <div class="challenge-answers" id="challenge-answers" role="group" aria-labelledby="challenge-question"></div>
+            <p id="challenge-feedback" class="challenge-feedback" role="status" aria-live="polite"></p>
+            <a class="challenge-source" id="challenge-source" href="research/#note-dcfcomps">Explore my DCF versus comparables note ↗</a>
+            <button class="button button-primary" id="challenge-next" type="button" hidden>Next check →</button>
+          </div>
+          <div id="challenge-complete" hidden><span class="complete-mark" aria-hidden="true">✓</span><h3 tabindex="-1">You’ve met the analyst.</h3><p>Research, practical experience, and campus initiative—three parts of the same story. This was a learning interaction, not an investing assessment or a recommendation.</p><button class="button button-primary" type="button" data-profile-open>Open my quick profile ↗</button></div>
+          <div class="challenge-bottom"><button type="button" id="challenge-replay">Start again ↻</button><button type="button" data-profile-open>Skip to my profile ↗</button></div>
+          <noscript><p>The challenge needs JavaScript. <a href="#leadership">Read my background directly</a> or <a href="assets/Dev-Amit-Pandya-Resume.pdf">open my résumé</a>.</p></noscript>
+        </div>
+        <div class="story-unlocks" aria-label="Story chapters revealed by the challenge">
+          <article class="unlock-card" data-unlock="research" data-unlocked="false"><span class="unlock-index">01 / THE RESEARCH MINDSET <b aria-hidden="true">↗</b></span><h3>Ask what the price assumes.</h3><p data-unlock-hint>Complete the valuation check to reveal this chapter—or use the quick profile anytime.</p><div data-unlock-content hidden><p>I study companies through valuation, catalysts, scenarios, and explicit risk. Explore my dated research on Vistra, Take-Two, and First Solar.</p><a href="#selected-work">Explore the research ↓</a></div></article>
+          <article class="unlock-card" data-unlock="experience" data-unlocked="false"><span class="unlock-index">02 / THE PRACTICAL EXPERIENCE <b aria-hidden="true">↗</b></span><h3>Go beyond the headline.</h3><p data-unlock-hint>Complete the expectations check to reveal this chapter—or go straight to the experience section.</p><div data-unlock-content hidden><p>Internships introduced me to creditworthiness, cost accounting, distressed accounts, corporate records, and reporting. Details matter when a decision depends on the numbers.</p><a href="#experience">Trace the experience ↓</a></div></article>
+          <article class="unlock-card" data-unlock="leadership" data-unlocked="false"><span class="unlock-index">03 / THE CAMPUS INITIATIVE <b aria-hidden="true">↗</b></span><h3>Turn conviction into initiative.</h3><p data-unlock-hint>Complete the downside check to reveal this chapter—or read the leadership section directly.</p><div data-unlock-content hidden><p>I’m Investment Club President and an Accounting &amp; Finance Teaching Assistant at UMass Boston, while developing a club website, university-level competition, and departmental alumni database.</p><a href="#leadership">Meet the campus projects ↓</a></div></article>
+        </div>
+      </div>
     </section>
     <section class="selected-work section-shell" id="selected-work" aria-labelledby="selected-work-title">
       <header class="section-heading reveal"><div><p class="eyebrow">SELECTED FINANCE WORK / 04</p><h2 id="selected-work-title">Research, with the reasoning attached.</h2></div><p>Educational and academic work—not professional deal execution, audited performance, or current recommendations. Each case states its date and limitations.</p></header>
@@ -215,5 +316,6 @@
   <dialog class="command-dialog" id="command-dialog" aria-labelledby="command-title"><div class="command-shell"><header><span id="command-title">Navigate portfolio</span><button id="command-close" type="button" aria-label="Close command palette">Esc</button></header><div class="command-list"><button type="button" data-command="selected-work"><span>Selected finance work</span><kbd>S</kbd></button><button type="button" data-command="leadership"><span>Leadership &amp; campus projects</span><kbd>L</kbd></button><button type="button" data-command="experience"><span>Finance experience</span><kbd>E</kbd></button><button type="button" data-command="capabilities"><span>Finance capabilities</span><kbd>C</kbd></button><button type="button" data-command="research"><span>Research preview</span><kbd>R</kbd></button><button type="button" data-command="foundation"><span>Education</span><kbd>F</kbd></button><button type="button" data-command="process"><span>Research process</span><kbd>P</kbd></button><button type="button" data-command="contact"><span>Contact</span><kbd>A</kbd></button><button type="button" data-command="theme"><span>Cycle theme</span><kbd>T</kbd></button></div><p>Keyboard-first · no telemetry</p></div></dialog>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dev Amit Pandya","url":"https://devpandya.com/","sameAs":["https://www.linkedin.com/in/dev-pandya-38a473220/"],"jobTitle":["M.S. Finance Student","Investment Club President","Accounting & Finance Teaching Assistant"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Ahmedabad University"}],"affiliation":{"@type":"CollegeOrUniversity","name":"University of Massachusetts Boston"},"knowsAbout":["Valuation","Equity Research","Credit Analysis","Portfolio Analysis","Financial Analysis"]}</script>
   <script src="assets/app.js?v=20261027a" defer></script>
+  <script type="module" src="assets/experience.js?v=20261027b"></script>
 </body>
 </html>

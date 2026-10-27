@@ -21,6 +21,10 @@ jobs:
         run: |
           node --check assets/app.js
           node --check assets/case.js
+          node --check assets/experience.js
+          node --check assets/experience-core.mjs
+      - name: Validate analyst challenge state machine
+        run: node --test scripts/experience-core.test.mjs
       - name: Validate public routes and original artifacts
         run: python3 scripts/validate_portfolio.py
       - name: Validate campus roles and project stages

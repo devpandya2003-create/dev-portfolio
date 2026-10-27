@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import * as core from '../assets/experience-core.mjs';
+
+test('the optional analyst challenge follows a deterministic three-check journey', () => {
+  assert.equal(typeof core.initialChallenge, 'function', 'A challenge state machine must exist');
+  assert.equal(typeof core.answerChallenge, 'function');
+  assert.equal(typeof core.nextChallenge, 'function');
+  let state = core.initialChallenge();
+  assert.equal(state.unlocked.length, 0);
+  assert.equal(state.complete, false);
+  const wrong = core.answerChallenge(state, 1);
+  assert.equal(wrong.answered, false);
+  assert.equal(wrong.unlocked.length, 0);
+  assert.equal(state.feedback, '', 'Previous states must not be mutated');
+  state = core.answerChallenge(state, 0);
+  assert.equal(state.answered, true);
+  assert.deepEqual(state.unlocked, ['research']);
+  assert.equal(core.answerChallenge(state, 0), state, 'Repeated clicks must not advance twice');
+  state = core.nextChallenge(state);
+  assert.equal(state.index, 1);
+  state = core.answerChallenge(state, 1);
+  assert.deepEqual(state.unlocked, ['research', 'experience']);
+  state = core.nextChallenge(state);
+  state = core.answerChallenge(state, 2);
+  state = core.nextChallenge(state);
+  assert.equal(state.complete, true);
+  assert.deepEqual(state.unlocked, ['research', 'experience', 'leadership']);
+  assert.equal(core.answerChallenge(state, 0), state);
+  assert.equal(core.initialChallenge().unlocked.length, 0, 'Replay starts fresh');
+});

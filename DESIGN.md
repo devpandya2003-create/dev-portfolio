@@ -1,43 +1,49 @@
-# Portfolio design system
+# Interactive finance portfolio design
 
-## Direction
-A personal, editorial finance portfolio: warm ivory, deep green, restrained typography, and visible work-in-progress labels. Keep finance research and original artifacts intact. Campus leadership complements—not replaces—the research evidence.
+## Owner-selected direction
 
-## 1. Colors and typography first
+Combine three experiences: a cinematic finance identity, an interactive analyst-style explorer, and an optional finance challenge that reveals story cards. Quick profile, résumé, contact, and the full existing evidence library remain accessible without playing.
 
-Palette and font pairing were previewed in Realtime Colors on October 27, 2026:
+## Visual system
 
-- Canvas: `#f7f6f2`
-- Primary text: `#192c29`
-- Action green: `#156b56`
-- Secondary surface: `#e7ede5`
-- Supporting text: `#52635d`
-- Display: DM Serif Display, regular and italic
-- Body/interface: DM Sans, weights 400–700
+The final layer is `assets/market.css`, loaded after the component and editorial stylesheets. It replaces the earlier ivory-led presentation with midnight navy, mint, blue-gray, and restrained warm highlights. Light/dark content themes remain supported; the introductory scene is intentionally dark in either theme.
 
-Fonts are served locally from `assets/fonts/`, with the original SIL Open Font Licenses included. There are no Google Fonts runtime requests. Light/dark modes share the same layout; automatic mode follows the visitor's system preference. Final theme tokens live in `assets/editorial.css`, layered after the existing component stylesheet.
+- Primary hero background: `#070e15`.
+- Hero action mint: `#8aefc6`.
+- Dark content canvas: `#071017`; light content canvas: `#edf3f7`.
+- Typography: locally hosted DM Sans for the identity and interface; existing licensed fonts are preserved in `assets/fonts/`.
+- No remote font requests, videos, WebGL, canvas render loop, framework runtime, or market-data API.
 
-Reference: https://www.realtimecolors.com/?colors=192c29-f7f6f2-156b56-e7ede5-a26d39&fonts=DM+Serif+Display-DM+Sans
+The SVG linework and orbital directory are original decorative compositions. They do not encode price history, portfolio returns, skill scores, or market activity. The moving focus-area ribbon contains portfolio topics, not quotes. The earlier Haikei wave is retained as an unused public asset, not claimed as the new background.
 
-## 2. Background second
+## The research desk
 
-`assets/haikei-campus-wave.svg` was generated using Haikei's Layered Waves tool with the palette's ivory, sage, and green. The generated path geometry is preserved; editor-only inline transitions were removed. The wave is decorative, has no data meaning, and is marked as presentation-only in the HTML.
+`assets/experience-core.mjs` contains the public data maps. `assets/experience.js` handles the interface.
 
-Reference: https://app.haikei.app/?generator=layered-waves
+- Analyst lens opens dated research; Investor lens opens the research process; Recruiter lens opens internship experience.
+- VST, TTWO, and FSLR buttons switch among real existing research cases, original workbook images, case links, and workbook downloads. Dates and limitations remain explicit.
+- The career timeline opens existing internship chapters; no new start/end dates or quantified outcomes are invented.
+- Leadership presents the owner-confirmed presidency and TA role, plus the three developing campus initiatives.
+- The quick-profile modal is independent of challenge progress and includes résumé, email, and LinkedIn shortcuts.
+- Tabs support keyboard arrows, Home/End, selected state, associated panels, and focus return after closing the profile.
 
-## 3. Motion last
+## The analyst challenge
 
-The In View pattern from Motion Primitives was reviewed as the animation reference. Only small, one-time section arrivals and link feedback are used. This existing site is vanilla HTML/CSS/JavaScript, not React/Tailwind, so the React component was **not installed or claimed as an imported dependency**. Equivalent simple behavior uses the site's existing IntersectionObserver and CSS, without adding a framework.
+Three qualitative checks cover discounting a fixed positive cash flow, the difference between business quality and investment quality, and downside/invalidation. Answers refer visitors to the relevant existing educational work. There is no timer, money, return simulation, investment recommendation, exam credential, or measurement of Dev's expertise.
 
-- No continuous animation, parallax, fake market ticker, or animated metric counter.
-- Content is readable without JavaScript and without observer callbacks.
-- Reduced-motion preference disables arrivals and animated scrolling.
-- Focus outlines and readable content take priority over decoration.
+The pure state machine rejects invalid choices, prevents repeated correct clicks from advancing twice, and keeps progress in page memory only. Wrong answers provide explanatory hints. Correct answers reveal research, experience, and leadership story cards; the same information remains available outside the game. Replay resets the journey.
 
-Reference: https://motion-primitives.com/docs/in-view
+## Motion and access
 
-## Content boundaries
+- Native CSS animates abstract linework, orbital markers, ambient light, a topic ribbon, and short interface arrivals.
+- A visible Motion on/off control pauses interface/background animation; it persists only an optional local preference.
+- System reduced-motion preference disables animation and is respected on changes. Storage failures do not disable the controls or navigation.
+- Ambient movement pauses while the document is hidden or the hero leaves the viewport.
+- The orbital directory reflows to a non-overlapping touch grid on phones.
+- Content and original links remain readable without JavaScript. No profile information is gated by the challenge.
 
-The current roles and three campus initiatives were supplied directly by Dev on October 27, 2026. No start dates, teaching responsibilities, student counts, competition results, or deployed project URLs were supplied, so none are invented. The competition remains in planning. The club website and alumni database remain in development. Checking alumni details every two weeks is a **planned refresh**, not evidence of a running schedule. No alumni records or scraping implementation are included in this portfolio.
+## Evidence and release boundaries
 
-Existing downloadable résumé and portfolio-brief PDFs are preserved as prior documents; this release updates website copy, not those source documents.
+Preserve all original financial reports, charts, workbooks, source attributions, and downloadable résumé PDFs. Current roles came from the owner; no university approval, teaching responsibilities, dates, participant numbers, project launches, alumni records, or running refresh schedule were supplied. The club website remains in development with a friend. The competition remains in planning. Alumni checks every two weeks remain planned.
+
+Run the static quality gate, content checks, Node state-machine tests, and the headless browser suite before publication. Browser tests cover the default pages, interactive states, responsive layouts, keyboard use, motion controls, storage denial, no-JS content, and absence of external data/tracking requests. Clean automated accessibility checks are not a complete accessibility certification.

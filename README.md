@@ -13,9 +13,9 @@ Current campus roles and project stages were supplied by Dev on October 27, 2026
 
 ## Design
 
-The workflow is **palette and typography first, SVG composition second, motion last**. The editorial theme uses locally hosted DM Sans and DM Serif Display fonts, an actual Haikei-generated wave, and restrained native animations. See [DESIGN.md](DESIGN.md) for provenance, tokens, and the deliberate vanilla-JavaScript alternative to React-only motion components.
+The owner-selected experience combines a cinematic finance identity, an interactive analyst-style explorer, and a short optional finance challenge. Dated research tickers, an internship timeline, audience lenses, a no-gate quick profile, and a replayable three-check journey make the information discoverable through interaction. Background linework and orbital navigation are decorative—not a live market feed. See [DESIGN.md](DESIGN.md) for the content and motion boundaries.
 
-`assets/styles.css` retains the existing component geometry. `assets/editorial.css` defines the final shared theme and responsive refinements across public pages. Automatic theme follows the visitor's system preference; manual overrides persist when browser storage is available. Navigation still works when storage is disabled. Reduced-motion and no-JavaScript visitors retain readable content.
+`assets/styles.css` and `assets/editorial.css` retain the existing component foundations. `assets/market.css` is the final visual layer across public pages. `assets/experience-core.mjs` holds public data and the pure challenge state machine; `assets/experience.js` handles interaction. Automatic theme follows the visitor's system preference. Visible motion controls, reduced-motion support, optional storage, and no-JavaScript access keep the profile usable.
 
 ## Preview locally
 
@@ -32,6 +32,9 @@ Dependency-free release checks:
 ```bash
 node --check assets/app.js
 node --check assets/case.js
+node --check assets/experience.js
+node --check assets/experience-core.mjs
+node --test scripts/experience-core.test.mjs
 python3 scripts/validate_portfolio.py
 python3 scripts/test_refresh.py
 ```
@@ -40,7 +43,7 @@ Real headless-browser verification (Playwright required):
 
 ```bash
 uv run --with playwright playwright install chromium
-uv run --with playwright python scripts/qa_refresh.py
+uv run --with playwright python scripts/qa_experience.py InteractivePortfolioTests
 ```
 
 The browser suite starts a temporary **loopback-only** server and closes it when finished. Optional environment settings:

@@ -59,15 +59,19 @@ class PortfolioBrowserTests(unittest.TestCase):
         self.context.close()
         self.assertEqual(self.errors, [], 'No unhandled browser JavaScript errors')
 
-    def test_editorial_identity_uses_local_fonts_and_decorative_wave(self):
+    def test_finance_identity_uses_local_fonts_and_real_research_artifact(self):
         expect(self.page.locator('h1')).to_have_text('Dev Amit Pandya.')
-        self.assertIn('DM Serif Display', self.page.locator('h1').evaluate('(e) => getComputedStyle(e).fontFamily'))
-        self.assertEqual(self.page.locator('body').evaluate('(e) => getComputedStyle(e).backgroundColor'), 'rgb(247, 246, 242)')
-        art = self.page.locator('.brief-art img')
-        expect(art).to_have_attribute('src', 'assets/haikei-campus-wave.svg')
+        self.assertIn('DM Sans', self.page.locator('h1').evaluate('(e) => getComputedStyle(e).fontFamily'))
+        self.assertEqual(self.page.locator('.market-hero').evaluate('(e) => getComputedStyle(e).backgroundColor'), 'rgb(7, 14, 21)')
+        self.assertEqual(self.page.locator('.market-ribbons').count(), 1)
+        art = self.page.locator('#desk-case-image')
+        art.scroll_into_view_if_needed()
+        expect(art).to_have_attribute('src', 'assets/research/vistra-valuation-bridge.png')
         self.assertTrue(art.evaluate('(e) => e.complete && e.naturalWidth > 0'))
         self.assertTrue(self.page.evaluate('(family) => document.fonts.check(`16px "${family}"`)', 'DM Sans'))
         self.assertTrue(self.page.evaluate('(family) => document.fonts.check(`32px "${family}"`)', 'DM Serif Display'))
+        self.page.emulate_media(reduced_motion='reduce')
+        self.page.evaluate('window.scrollTo(0, 0)')
         self.page.screenshot(path=str(self.output / 'desktop-home.png'), animations='disabled')
 
     def test_auto_theme_tracks_system_changes_on_home_and_case_pages(self):
