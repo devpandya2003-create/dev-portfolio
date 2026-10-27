@@ -20,21 +20,21 @@
   <link rel="stylesheet" href="assets/styles.css?v=20260728b">
 <link rel="preload" href="assets/fonts/dm-serif-display-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/editorial.css?v=20261027a">
-  <link rel="stylesheet" href="assets/market.css?v=20261027b">
+  <link rel="stylesheet" href="assets/market.css?v=20261027c">
+  <link rel="stylesheet" href="assets/finance-lab.css?v=20261027c">
 </head>
 <body class="home-page">
   <a class="skip-link" href="#main">Skip to content</a><div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Dev Amit Pandya portfolio home"><span class="brand-glyph">D</span><span class="brand-copy"><strong>DEV PANDYA</strong><small>FINANCE + INITIATIVE</small></span></a>
-    <nav class="main-nav" id="desktop-navigation" aria-label="Primary navigation"><a href="#explore">The desk</a><a href="#selected-work">Research</a><a href="#leadership">Leadership</a><a href="#experience">Experience</a><a href="research/">Archive</a><a href="#foundation">Education</a><a href="#contact">Contact</a></nav>
+    <nav class="main-nav" id="desktop-navigation" aria-label="Primary navigation"><a href="#finance-lab">The lab</a><a href="#selected-work">Research</a><a href="#leadership">Leadership</a><a href="#experience">Experience</a><a href="research/">Archive</a><a href="#foundation">Education</a><a href="#contact">Contact</a></nav>
     <div class="header-tools">
-      <button class="motion-button" id="motion-toggle" type="button" aria-pressed="true" aria-label="Toggle background and interface motion">Motion on</button>
       <button class="text-button" id="theme-toggle" type="button" aria-label="Change color theme">Theme: auto</button>
       <button class="key-button" id="command-open" type="button" aria-label="Open command palette"><kbd>⌘</kbd><kbd>K</kbd></button>
       <button class="menu-button" id="menu-open" type="button" aria-controls="mobile-nav" aria-expanded="false">Menu</button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <button type="button" data-theme-cycle>Change color theme</button><a href="#explore">Interactive desk</a><a href="#challenge">Analyst challenge</a><a href="#selected-work">Selected work</a><a href="#leadership">Leadership &amp; campus projects</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="research/">Archive</a><a href="#foundation">Education</a><a href="#contact">Contact</a><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <button type="button" data-theme-cycle>Change color theme</button><a href="#finance-lab">Hands-on finance lab</a><a href="#explore">Interactive desk</a><a href="#challenge">Analyst challenge</a><a href="#selected-work">Selected work</a><a href="#leadership">Leadership &amp; campus projects</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="research/">Archive</a><a href="#foundation">Education</a><a href="#contact">Contact</a><a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
     </nav>
   </header>
   <main id="main">
@@ -54,11 +54,11 @@
           <p class="hero-statement">Research the business.<br>Build the next chapter.</p>
           <p class="hero-deck" id="hero-introduction">M.S. Finance at UMass Boston. Investment Club President. Accounting &amp; Finance Teaching Assistant. Explore the research, experience, and initiative behind the profile.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#explore">Enter the research desk <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#finance-lab">Open the finance lab <span aria-hidden="true">↗</span></a>
             <a class="button button-quiet" href="#challenge">Play the analyst challenge <span aria-hidden="true">→</span></a>
           </div>
           <div class="hero-secondary-links">
-            <button type="button" data-profile-open>Just the essentials ↗</button>
+            <a href="#explore">Research desk ↗</a><button type="button" data-profile-open>Just the essentials ↗</button>
             <a href="assets/Dev-Amit-Pandya-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
             <a href="mailto:devpandya2003@gmail.com">Let’s connect ↗</a>
           </div>
@@ -79,6 +79,83 @@
       <div class="portfolio-ticker" aria-label="Portfolio focus areas">
         <div class="ticker-track"><span>VALUATION <b>DCF + COMPS</b></span><span>RESEARCH <b>THESIS → EVIDENCE</b></span><span>RISK <b>SCENARIOS, NOT CERTAINTY</b></span><span>LEADERSHIP <b>UMASS BOSTON</b></span><span>BUILDING <b>CAMPUS INITIATIVES</b></span><span aria-hidden="true">VALUATION <b>DCF + COMPS</b></span><span aria-hidden="true">RESEARCH <b>THESIS → EVIDENCE</b></span><span aria-hidden="true">RISK <b>SCENARIOS, NOT CERTAINTY</b></span><span aria-hidden="true">LEADERSHIP <b>UMASS BOSTON</b></span><span aria-hidden="true">BUILDING <b>CAMPUS INITIATIVES</b></span></div>
       </div>
+    </section>
+    <section class="finance-lab section-shell" id="finance-lab" aria-labelledby="finance-lab-title">
+      <header class="section-heading reveal"><div><p class="eyebrow">THE HANDS-ON FINANCE LAB</p><h2 id="finance-lab-title">Pull the levers.<br>See the trade-offs.</h2></div><p>Change the assumptions, inspect the arithmetic, and explore how I approach finance. These are teaching models—not company forecasts or investing recommendations.</p></header>
+      <div class="lab-frame reveal">
+        <div class="lab-tablist" role="tablist" aria-label="Choose a hands-on finance activity">
+          <button type="button" role="tab" id="lab-tab-value" aria-controls="lab-panel-value" aria-selected="true" tabindex="0" data-lab-tab="value"><span>01</span> Value a business <b aria-hidden="true">↗</b></button>
+          <button type="button" role="tab" id="lab-tab-allocate" aria-controls="lab-panel-allocate" aria-selected="false" tabindex="-1" data-lab-tab="allocate"><span>02</span> Allocate 100 tokens <b aria-hidden="true">↗</b></button>
+          <button type="button" role="tab" id="lab-tab-compare" aria-controls="lab-panel-compare" aria-selected="false" tabindex="-1" data-lab-tab="compare"><span>03</span> Compare research <b aria-hidden="true">↗</b></button>
+        </div>
+        <section class="lab-panel" role="tabpanel" id="lab-panel-value" aria-labelledby="lab-tab-value" tabindex="0">
+          <div class="lab-panel-heading"><div><p class="eyebrow">FICTIONAL COMPANY · FIVE-YEAR FCFF MODEL</p><h3>What is the business worth<br>under your assumptions?</h3></div><span class="lab-label">EDUCATIONAL SANDBOX</span></div>
+          <p class="lab-description" id="lab-model-note">Start with $10m of fictional year-zero free cash flow to the firm. Change five-year growth and discount assumptions. The result is operating value—not equity value or a share price.</p>
+          <div class="lab-presets" role="group" aria-label="Fictional valuation presets"><button type="button" data-dcf-preset="base" aria-pressed="true">Base assumptions</button><button type="button" data-dcf-preset="growth" aria-pressed="false">Faster growth</button><button type="button" data-dcf-preset="hurdle" aria-pressed="false">Higher hurdle rate</button></div>
+          <div class="valuation-layout">
+            <div class="valuation-inputs">
+              <div class="lab-slider"><div><label for="lab-growth">Forecast FCFF growth</label><output for="lab-growth" id="lab-growth-value">8.0%</output></div><input type="range" id="lab-growth" min="0" max="20" step="0.5" value="8" aria-describedby="lab-growth-note"><p id="lab-growth-note">Annual growth in years 1–5 · 0% to 20%</p></div>
+              <div class="lab-slider"><div><label for="lab-discount">Discount rate / cost of capital</label><output for="lab-discount" id="lab-discount-value">10.0%</output></div><input type="range" id="lab-discount" min="3" max="18" step="0.5" value="10" aria-describedby="lab-discount-note"><p id="lab-discount-note">Required rate in this toy model · 3% to 18%</p></div>
+              <div class="lab-slider"><div><label for="lab-terminal">Terminal FCFF growth</label><output for="lab-terminal" id="lab-terminal-value">2.0%</output></div><input type="range" id="lab-terminal" min="0" max="5" step="0.5" value="2" aria-describedby="lab-terminal-note"><p id="lab-terminal-note">Perpetual growth after year 5 · must be below the discount rate</p></div>
+              <button type="button" class="lab-reset" id="lab-dcf-reset">Reset assumptions ↻</button>
+              <details class="lab-method"><summary>How is this calculated?</summary><p>FCFFₜ = $10m × (1 + forecast growth)ᵗ. Each forecast cash flow is discounted by (1 + discount rate)ᵗ. Terminal value at year 5 = FCFF₅ × (1 + terminal growth) ÷ (discount rate − terminal growth), then discounted five years. Operating value is the sum.</p><p>The sliders illustrate sensitivity, not economically validated assumptions. Reinvestment and operating fundamentals are not separately modeled. Debt, non-operating assets, taxes, and share counts are not reconciled into equity value.</p><a href="https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/free-cash-flow-valuation" target="_blank" rel="noreferrer">CFA Institute: FCFF valuation ↗</a><a href="https://pages.stern.nyu.edu/adamodar/New_Home_Page/littlebook/terminalvalue.htm" target="_blank" rel="noreferrer">NYU Stern: terminal-value limitations ↗</a></details>
+            </div>
+            <div class="valuation-output">
+              <p class="lab-status" id="lab-model-status" role="status" aria-live="polite"></p>
+              <div id="lab-dcf-results">
+                <span class="lab-output-label" id="lab-value-label">FICTIONAL OPERATING VALUE</span><output id="lab-dcf-value" class="lab-big-value" data-cents="" aria-labelledby="lab-value-label" aria-live="off">—</output>
+                <p class="terminal-share" id="lab-terminal-share">Calculated in your browser from your assumptions.</p>
+                <div class="cash-flow-header"><h4>Inspect a forecast year</h4><span>DISCOUNTED FCFF</span></div>
+                <div class="cash-flow-chart" id="lab-flow-chart" role="group" aria-label="Select a forecast year to inspect its cash flow"></div>
+                <p class="lab-year-detail" id="lab-year-detail" role="status" aria-live="polite"></p>
+                <p class="lab-caveat">Fictional cash flows. No live prices. No terminal-value result when the discount rate is at or below terminal growth.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lab-panel" role="tabpanel" id="lab-panel-allocate" aria-labelledby="lab-tab-allocate" tabindex="0" hidden>
+          <div class="lab-panel-heading"><div><p class="eyebrow">100 FICTIONAL TOKENS · THREE AUTHORED SCENARIOS</p><h3>Build a mix.<br>Test its assumptions.</h3></div><span class="lab-label">NOT MONEY. NOT A FORECAST.</span></div>
+          <p class="lab-description">Allocate 100 fictional tokens. Apply the invented shocks and inspect the result. This is a teaching exercise, not a return forecast or recommended portfolio.</p>
+          <div class="lab-presets" role="group" aria-label="Example token allocations"><button type="button" data-allocation-preset="split" aria-pressed="true">50 / 40 / 10 example</button><button type="button" data-allocation-preset="growth" aria-pressed="false">Growth sleeve only</button><button type="button" data-allocation-preset="cash" aria-pressed="false">Cash sleeve only</button></div>
+          <div class="allocation-layout">
+            <div class="allocation-inputs">
+              <div class="allocation-budget"><span>TOKENS ALLOCATED</span><output id="lab-budget-total">100 / 100</output></div>
+              <div class="budget-track" aria-hidden="true"><span id="lab-budget-fill"></span></div>
+              <div class="lab-slider"><div><label for="lab-weight-growth"><i class="sleeve-dot growth-dot" aria-hidden="true"></i> Growth sleeve</label><output id="lab-weight-growth-value" for="lab-weight-growth">50</output></div><input type="range" id="lab-weight-growth" min="0" max="100" step="5" value="50" aria-describedby="lab-growth-sleeve-note"><p id="lab-growth-sleeve-note">Fictional equity sleeve · tokens, not money</p></div>
+              <div class="lab-slider"><div><label for="lab-weight-bonds"><i class="sleeve-dot bonds-dot" aria-hidden="true"></i> Bond sleeve</label><output id="lab-weight-bonds-value" for="lab-weight-bonds">40</output></div><input type="range" id="lab-weight-bonds" min="0" max="100" step="5" value="40" aria-describedby="lab-bonds-sleeve-note"><p id="lab-bonds-sleeve-note">Fictional bond sleeve · authored shocks only</p></div>
+              <div class="lab-slider"><div><label for="lab-weight-cash"><i class="sleeve-dot cash-dot" aria-hidden="true"></i> Cash sleeve</label><output id="lab-weight-cash-value" for="lab-weight-cash">10</output></div><input type="range" id="lab-weight-cash" min="0" max="100" step="5" value="10" aria-describedby="lab-cash-sleeve-note"><p id="lab-cash-sleeve-note">Fixed flat in this toy model · not a risk-free claim</p></div>
+              <button class="lab-reset" type="button" id="lab-allocation-reset">Reset allocation &amp; scenario ↻</button>
+              <p class="lab-caveat">Moving one slider does not silently rebalance the others. Results are withheld until the total is exactly 100.</p>
+            </div>
+            <div class="allocation-output">
+              <p class="eyebrow">CHOOSE AN INVENTED SCENARIO</p>
+              <div class="stress-choices" role="group" aria-label="Choose an authored scenario"><button type="button" data-stress="selloff" aria-pressed="true">Equity sell-off</button><button type="button" data-stress="rates" aria-pressed="false">Rate shock</button><button type="button" data-stress="riskon" aria-pressed="false">Risk-on move</button></div>
+              <p class="lab-status" id="lab-allocation-status" role="status" aria-live="polite"></p>
+              <div id="lab-stress-result">
+                <p class="lab-output-label" id="lab-selected-scenario">Toy equity sell-off</p><output class="lab-big-value" id="lab-token-ending" data-hundredths="" aria-label="Illustrative ending teaching tokens" aria-live="off">—</output><p id="lab-token-impact" class="token-impact"></p>
+                <div class="allocation-strip" aria-hidden="true"><span id="lab-strip-growth"></span><span id="lab-strip-bonds"></span><span id="lab-strip-cash"></span></div>
+                <div class="lab-table-wrap"><table class="shock-table"><caption>Authored shocks and arithmetic—not forecasts</caption><thead><tr><th scope="col">Sleeve</th><th scope="col">Tokens</th><th scope="col">Shock</th><th scope="col">Change*</th></tr></thead><tbody id="lab-shock-rows"></tbody></table></div>
+                <p class="lab-allocation-note" id="lab-allocation-note"></p>
+                <p class="lab-caveat">*Change is in fictional tokens. These single-step scenarios omit fees, inflation, taxes, changing correlations, and other risks. They do not estimate future returns or prove diversification.</p>
+              </div>
+            </div>
+          </div>
+          <div class="lab-evidence-link"><a href="research/global-portfolio/">Open my academic hypothetical-portfolio case ↗</a><a href="https://www.investor.gov/introduction-investing/getting-started/asset-allocation" target="_blank" rel="noreferrer">SEC: allocation &amp; diversification ↗</a></div>
+        </section>
+        <section class="lab-panel" role="tabpanel" id="lab-panel-compare" aria-labelledby="lab-tab-compare" tabindex="0" hidden>
+          <div class="lab-panel-heading"><div><p class="eyebrow">REAL EXISTING RESEARCH · DATED SOURCE WORKBOOKS</p><h3>Compare the reasoning.<br>Not just the ticker.</h3></div><span class="lab-label">NO LIVE PRICES OR RANKING</span></div>
+          <p class="lab-description">Choose two cases, inspect the different questions and risk lenses, and enlarge the original workbook figures. These are my existing educational cases—not recommendations or refreshed price targets.</p>
+          <div class="comparison-controls">
+            <div><label for="lab-compare-left">First research case</label><select id="lab-compare-left"><option value="vistra">VST · Vistra</option><option value="ttwo">TTWO · Take-Two</option><option value="firstsolar">FSLR · First Solar</option></select></div>
+            <div><label for="lab-compare-right">Second research case</label><select id="lab-compare-right"><option value="vistra">VST · Vistra</option><option value="ttwo" selected>TTWO · Take-Two</option><option value="firstsolar">FSLR · First Solar</option></select></div>
+            <button type="button" id="lab-compare-swap" aria-label="Swap the first and second research cases">Swap ⇄</button>
+          </div>
+          <p class="lab-status" id="lab-compare-status" role="status" aria-live="polite"></p>
+          <div class="case-comparison" id="lab-comparison-output"></div>
+        </section>
+        <dialog class="lab-chart-dialog" id="lab-chart-dialog" aria-labelledby="lab-chart-title"><div class="lab-chart-shell"><header><div><p class="eyebrow">ORIGINAL WORKBOOK FIGURE</p><h3 id="lab-chart-title">Research source chart</h3></div><button type="button" id="lab-chart-close" aria-label="Close original chart">Close ×</button></header><div id="lab-chart-image"></div><footer><p>Dated educational analysis. The linked case contains the source context and limitations.</p><a id="lab-chart-case-link" href="research/vistra/">Open full case ↗</a></footer></div></dialog>
+      </div>
+      <noscript><p>The lab needs JavaScript; your information does not. <a href="#selected-work">Read the research</a> or <a href="assets/Dev-Amit-Pandya-Resume.pdf">open the résumé</a>.</p></noscript>
     </section>
     <section class="desk-section section-shell" id="explore" aria-labelledby="desk-heading">
       <header class="section-heading reveal"><div><p class="eyebrow">01 / THE INTERACTIVE RESEARCH DESK</p><h2 id="desk-heading">Don’t just scroll.<br>Follow your curiosity.</h2></div><p>Choose your lens, open a research ticker, or trace my experience. The interface changes; the evidence stays accessible.</p></header>
@@ -309,13 +386,14 @@
   </main>
   <footer class="site-footer section-shell">
     <div><span class="brand-glyph">D</span><p><strong>Dev Amit Pandya</strong><br>M.S. Finance student · Boston, MA</p></div>
-    <div class="footer-meta"><a href="mailto:devpandya2003@gmail.com">Email</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn</a><span>DATED RESEARCH · NOT ADVICE</span><span id="local-time">LOCAL TIME —:—</span></div>
+    <div class="footer-meta"><a href="mailto:devpandya2003@gmail.com">Email</a><a href="https://www.linkedin.com/in/dev-pandya-38a473220/" target="_blank" rel="noreferrer">LinkedIn</a><span>DATED RESEARCH · NOT ADVICE</span><span id="local-time">LOCAL TIME —:—</span><button class="motion-preference" id="motion-toggle" type="button" aria-pressed="true" aria-label="Toggle background and interface motion">Motion on</button></div>
     <button class="back-top" type="button" data-scroll="top">Back to top ↑</button>
   </footer>
   <dialog class="note-dialog" id="note-dialog" aria-label="Finance research note reader"><div class="dialog-shell"><header class="dialog-header"><span id="dialog-index">R—001</span><button id="dialog-close" type="button" aria-label="Close article">Close <kbd>Esc</kbd></button></header><article id="dialog-content"></article></div></dialog>
-  <dialog class="command-dialog" id="command-dialog" aria-labelledby="command-title"><div class="command-shell"><header><span id="command-title">Navigate portfolio</span><button id="command-close" type="button" aria-label="Close command palette">Esc</button></header><div class="command-list"><button type="button" data-command="selected-work"><span>Selected finance work</span><kbd>S</kbd></button><button type="button" data-command="leadership"><span>Leadership &amp; campus projects</span><kbd>L</kbd></button><button type="button" data-command="experience"><span>Finance experience</span><kbd>E</kbd></button><button type="button" data-command="capabilities"><span>Finance capabilities</span><kbd>C</kbd></button><button type="button" data-command="research"><span>Research preview</span><kbd>R</kbd></button><button type="button" data-command="foundation"><span>Education</span><kbd>F</kbd></button><button type="button" data-command="process"><span>Research process</span><kbd>P</kbd></button><button type="button" data-command="contact"><span>Contact</span><kbd>A</kbd></button><button type="button" data-command="theme"><span>Cycle theme</span><kbd>T</kbd></button></div><p>Keyboard-first · no telemetry</p></div></dialog>
+  <dialog class="command-dialog" id="command-dialog" aria-labelledby="command-title"><div class="command-shell"><header><span id="command-title">Navigate portfolio</span><button id="command-close" type="button" aria-label="Close command palette">Esc</button></header><div class="command-list"><button type="button" data-command="selected-work"><span>Selected finance work</span><kbd>S</kbd></button><button type="button" data-command="finance-lab"><span>Hands-on finance lab</span><kbd>F</kbd></button><button type="button" data-command="leadership"><span>Leadership &amp; campus projects</span><kbd>L</kbd></button><button type="button" data-command="experience"><span>Finance experience</span><kbd>E</kbd></button><button type="button" data-command="capabilities"><span>Finance capabilities</span><kbd>C</kbd></button><button type="button" data-command="research"><span>Research preview</span><kbd>R</kbd></button><button type="button" data-command="foundation"><span>Education</span><kbd>F</kbd></button><button type="button" data-command="process"><span>Research process</span><kbd>P</kbd></button><button type="button" data-command="contact"><span>Contact</span><kbd>A</kbd></button><button type="button" data-command="theme"><span>Cycle theme</span><kbd>T</kbd></button></div><p>Keyboard-first · no telemetry</p></div></dialog>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Dev Amit Pandya","url":"https://devpandya.com/","sameAs":["https://www.linkedin.com/in/dev-pandya-38a473220/"],"jobTitle":["M.S. Finance Student","Investment Club President","Accounting & Finance Teaching Assistant"],"alumniOf":[{"@type":"CollegeOrUniversity","name":"Ahmedabad University"}],"affiliation":{"@type":"CollegeOrUniversity","name":"University of Massachusetts Boston"},"knowsAbout":["Valuation","Equity Research","Credit Analysis","Portfolio Analysis","Financial Analysis"]}</script>
-  <script src="assets/app.js?v=20261027a" defer></script>
+  <script src="assets/app.js?v=20261027c" defer></script>
   <script type="module" src="assets/experience.js?v=20261027b"></script>
+  <script type="module" src="assets/finance-lab.js?v=20261027c"></script>
 </body>
 </html>

@@ -11,6 +11,12 @@ Static personal portfolio at **https://devpandya.com**, published through GitHub
 
 Current campus roles and project stages were supplied by Dev on October 27, 2026. Project start dates, results, production schedules, competition details, and teaching duties were not invented. No alumni records are published or collected by this site. The existing résumé and recruiter-brief PDFs are preserved; this website release does not revise those source documents.
 
+## Hands-on finance lab
+
+The homepage's **Open the finance lab** action leads to three activities: a fictional-company FCFF valuation sandbox with inspectable cash flows, a 100-token allocation stress model with explicitly authored shocks, and side-by-side comparison of the existing dated research cases with original-chart inspection. Invalid model assumptions and incomplete allocations withhold the result rather than silently adjusting inputs.
+
+`assets/finance-lab-core.mjs` contains bounded exact arithmetic, `assets/finance-lab.js` handles the interface, and `assets/finance-lab.css` styles this component. The calculation contract, limitations, independent oracle, and primary conceptual sources are documented in [FINANCE_LAB.md](FINANCE_LAB.md). These are teaching tools—not market data, company forecasts, portfolio performance, or financial advice.
+
 ## Design
 
 The owner-selected experience combines a cinematic finance identity, an interactive analyst-style explorer, and a short optional finance challenge. Dated research tickers, an internship timeline, audience lenses, a no-gate quick profile, and a replayable three-check journey make the information discoverable through interaction. Background linework and orbital navigation are decorative—not a live market feed. See [DESIGN.md](DESIGN.md) for the content and motion boundaries.
@@ -34,7 +40,10 @@ node --check assets/app.js
 node --check assets/case.js
 node --check assets/experience.js
 node --check assets/experience-core.mjs
+node --check assets/finance-lab.js
+node --check assets/finance-lab-core.mjs
 node --test scripts/experience-core.test.mjs
+node --test scripts/finance-lab-core.test.mjs
 python3 scripts/validate_portfolio.py
 python3 scripts/test_refresh.py
 ```
@@ -43,7 +52,7 @@ Real headless-browser verification (Playwright required):
 
 ```bash
 uv run --with playwright playwright install chromium
-uv run --with playwright python scripts/qa_experience.py InteractivePortfolioTests
+uv run --with playwright python scripts/qa_finance_lab.py FinanceLabTests
 ```
 
 The browser suite starts a temporary **loopback-only** server and closes it when finished. Optional environment settings:

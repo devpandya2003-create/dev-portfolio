@@ -1,0 +1,617 @@
+{
+  "fixture_class": "AUTHORED_FICTIONAL_EDUCATIONAL",
+  "units": "USD cents; rates in basis points; positive half-up display rounding",
+  "base_year_fcff_cents": "1000000000",
+  "years": 5,
+  "cases": [
+    {
+      "inputs": {
+        "growthBps": 800,
+        "discountBps": 1000,
+        "terminalBps": 200
+      },
+      "expected": {
+        "status": "ok",
+        "enterpriseCents": "16366093245",
+        "forecastCashCents": [
+          "1080000000",
+          "1166400000",
+          "1259712000",
+          "1360488960",
+          "1469328077"
+        ],
+        "forecastPvsCents": [
+          "981818182",
+          "963966942",
+          "946440270",
+          "929232266",
+          "912337133"
+        ],
+        "terminalPvCents": "11632298452",
+        "terminalShareBps": 7108,
+        "enterpriseExact": {
+          "numerator": "239615971200000",
+          "denominator": "14641"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "growthBps": 0,
+        "discountBps": 1000,
+        "terminalBps": 0
+      },
+      "expected": {
+        "status": "ok",
+        "enterpriseCents": "10000000000",
+        "forecastCashCents": [
+          "1000000000",
+          "1000000000",
+          "1000000000",
+          "1000000000",
+          "1000000000"
+        ],
+        "forecastPvsCents": [
+          "909090909",
+          "826446281",
+          "751314801",
+          "683013455",
+          "620921323"
+        ],
+        "terminalPvCents": "6209213231",
+        "terminalShareBps": 6209,
+        "enterpriseExact": {
+          "numerator": "10000000000",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "growthBps": 1200,
+        "discountBps": 1000,
+        "terminalBps": 200
+      },
+      "expected": {
+        "status": "ok",
+        "enterpriseCents": "19231442661",
+        "forecastCashCents": [
+          "1120000000",
+          "1254400000",
+          "1404928000",
+          "1573519360",
+          "1762341683"
+        ],
+        "forecastPvsCents": [
+          "1018181818",
+          "1036694215",
+          "1055543201",
+          "1074734895",
+          "1094275530"
+        ],
+        "terminalPvCents": "13952013003",
+        "terminalShareBps": 7255,
+        "enterpriseExact": {
+          "numerator": "281567552000000",
+          "denominator": "14641"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "growthBps": 800,
+        "discountBps": 1400,
+        "terminalBps": 200
+      },
+      "expected": {
+        "status": "ok",
+        "enterpriseCents": "10750331873",
+        "forecastCashCents": [
+          "1080000000",
+          "1166400000",
+          "1259712000",
+          "1360488960",
+          "1469328077"
+        ],
+        "forecastPvsCents": [
+          "947368421",
+          "897506925",
+          "850269719",
+          "805518681",
+          "763122961"
+        ],
+        "terminalPvCents": "6486545166",
+        "terminalShareBps": 6034,
+        "enterpriseExact": {
+          "numerator": "1400994000000000",
+          "denominator": "130321"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "growthBps": 800,
+        "discountBps": 300,
+        "terminalBps": 250
+      },
+      "expected": {
+        "status": "ok",
+        "enterpriseCents": "265605372383",
+        "forecastCashCents": [
+          "1080000000",
+          "1166400000",
+          "1259712000",
+          "1360488960",
+          "1469328077"
+        ],
+        "forecastPvsCents": [
+          "1048543689",
+          "1099443868",
+          "1152814930",
+          "1208776820",
+          "1267455306"
+        ],
+        "terminalPvCents": "259828337769",
+        "terminalShareBps": 9782,
+        "enterpriseExact": {
+          "numerator": "29894118660000000000",
+          "denominator": "112550881"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "growthBps": 2000,
+        "discountBps": 550,
+        "terminalBps": 500
+      },
+      "expected": {
+        "status": "ok",
+        "enterpriseCents": "407299358626",
+        "forecastCashCents": [
+          "1200000000",
+          "1440000000",
+          "1728000000",
+          "2073600000",
+          "2488320000"
+        ],
+        "forecastPvsCents": [
+          "1137440758",
+          "1293771479",
+          "1471588412",
+          "1673844639",
+          "1903899115"
+        ],
+        "terminalPvCents": "399818814223",
+        "terminalShareBps": 9816,
+        "enterpriseExact": {
+          "numerator": "807315977040000000000",
+          "denominator": "1982119441"
+        }
+      }
+    }
+  ],
+  "allocation_units": "hundredths of fictional tokens, not money; authored shocks, not observations",
+  "allocation_cases": [
+    {
+      "weights": {
+        "growth": 50,
+        "bonds": 40,
+        "cash": 10
+      },
+      "scenario": "selloff",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "selloff",
+        "impactHundredths": -840,
+        "endHundredths": 9160,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 50,
+            "shockBps": -2000,
+            "impactHundredths": -1000
+          },
+          {
+            "key": "bonds",
+            "weight": 40,
+            "shockBps": 400,
+            "impactHundredths": 160
+          },
+          {
+            "key": "cash",
+            "weight": 10,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 50,
+        "bonds": 40,
+        "cash": 10
+      },
+      "scenario": "rates",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "rates",
+        "impactHundredths": -800,
+        "endHundredths": 9200,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 50,
+            "shockBps": -800,
+            "impactHundredths": -400
+          },
+          {
+            "key": "bonds",
+            "weight": 40,
+            "shockBps": -1000,
+            "impactHundredths": -400
+          },
+          {
+            "key": "cash",
+            "weight": 10,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 50,
+        "bonds": 40,
+        "cash": 10
+      },
+      "scenario": "riskon",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "riskon",
+        "impactHundredths": 720,
+        "endHundredths": 10720,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 50,
+            "shockBps": 1200,
+            "impactHundredths": 600
+          },
+          {
+            "key": "bonds",
+            "weight": 40,
+            "shockBps": 300,
+            "impactHundredths": 120
+          },
+          {
+            "key": "cash",
+            "weight": 10,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 100,
+        "bonds": 0,
+        "cash": 0
+      },
+      "scenario": "selloff",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "selloff",
+        "impactHundredths": -2000,
+        "endHundredths": 8000,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 100,
+            "shockBps": -2000,
+            "impactHundredths": -2000
+          },
+          {
+            "key": "bonds",
+            "weight": 0,
+            "shockBps": 400,
+            "impactHundredths": 0
+          },
+          {
+            "key": "cash",
+            "weight": 0,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 100,
+        "bonds": 0,
+        "cash": 0
+      },
+      "scenario": "rates",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "rates",
+        "impactHundredths": -800,
+        "endHundredths": 9200,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 100,
+            "shockBps": -800,
+            "impactHundredths": -800
+          },
+          {
+            "key": "bonds",
+            "weight": 0,
+            "shockBps": -1000,
+            "impactHundredths": 0
+          },
+          {
+            "key": "cash",
+            "weight": 0,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 100,
+        "bonds": 0,
+        "cash": 0
+      },
+      "scenario": "riskon",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "riskon",
+        "impactHundredths": 1200,
+        "endHundredths": 11200,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 100,
+            "shockBps": 1200,
+            "impactHundredths": 1200
+          },
+          {
+            "key": "bonds",
+            "weight": 0,
+            "shockBps": 300,
+            "impactHundredths": 0
+          },
+          {
+            "key": "cash",
+            "weight": 0,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 0,
+        "bonds": 0,
+        "cash": 100
+      },
+      "scenario": "selloff",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "selloff",
+        "impactHundredths": 0,
+        "endHundredths": 10000,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 0,
+            "shockBps": -2000,
+            "impactHundredths": 0
+          },
+          {
+            "key": "bonds",
+            "weight": 0,
+            "shockBps": 400,
+            "impactHundredths": 0
+          },
+          {
+            "key": "cash",
+            "weight": 100,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 0,
+        "bonds": 0,
+        "cash": 100
+      },
+      "scenario": "rates",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "rates",
+        "impactHundredths": 0,
+        "endHundredths": 10000,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 0,
+            "shockBps": -800,
+            "impactHundredths": 0
+          },
+          {
+            "key": "bonds",
+            "weight": 0,
+            "shockBps": -1000,
+            "impactHundredths": 0
+          },
+          {
+            "key": "cash",
+            "weight": 100,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 0,
+        "bonds": 0,
+        "cash": 100
+      },
+      "scenario": "riskon",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "riskon",
+        "impactHundredths": 0,
+        "endHundredths": 10000,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 0,
+            "shockBps": 1200,
+            "impactHundredths": 0
+          },
+          {
+            "key": "bonds",
+            "weight": 0,
+            "shockBps": 300,
+            "impactHundredths": 0
+          },
+          {
+            "key": "cash",
+            "weight": 100,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 35,
+        "bonds": 35,
+        "cash": 30
+      },
+      "scenario": "selloff",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "selloff",
+        "impactHundredths": -560,
+        "endHundredths": 9440,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 35,
+            "shockBps": -2000,
+            "impactHundredths": -700
+          },
+          {
+            "key": "bonds",
+            "weight": 35,
+            "shockBps": 400,
+            "impactHundredths": 140
+          },
+          {
+            "key": "cash",
+            "weight": 30,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 35,
+        "bonds": 35,
+        "cash": 30
+      },
+      "scenario": "rates",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "rates",
+        "impactHundredths": -630,
+        "endHundredths": 9370,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 35,
+            "shockBps": -800,
+            "impactHundredths": -280
+          },
+          {
+            "key": "bonds",
+            "weight": 35,
+            "shockBps": -1000,
+            "impactHundredths": -350
+          },
+          {
+            "key": "cash",
+            "weight": 30,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    },
+    {
+      "weights": {
+        "growth": 35,
+        "bonds": 35,
+        "cash": 30
+      },
+      "scenario": "riskon",
+      "expected": {
+        "status": "ok",
+        "total": 100,
+        "scenario": "riskon",
+        "impactHundredths": 525,
+        "endHundredths": 10525,
+        "contributions": [
+          {
+            "key": "growth",
+            "weight": 35,
+            "shockBps": 1200,
+            "impactHundredths": 420
+          },
+          {
+            "key": "bonds",
+            "weight": 35,
+            "shockBps": 300,
+            "impactHundredths": 105
+          },
+          {
+            "key": "cash",
+            "weight": 30,
+            "shockBps": 0,
+            "impactHundredths": 0
+          }
+        ]
+      }
+    }
+  ]
+}

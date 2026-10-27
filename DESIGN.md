@@ -16,6 +16,16 @@ The final layer is `assets/market.css`, loaded after the component and editorial
 
 The SVG linework and orbital directory are original decorative compositions. They do not encode price history, portfolio returns, skill scores, or market activity. The moving focus-area ribbon contains portfolio topics, not quotes. The earlier Haikei wave is retained as an unused public asset, not claimed as the new background.
 
+## Hands-on finance lab
+
+The primary homepage action opens a three-tab teaching surface, styled locally in `assets/finance-lab.css`:
+
+- Fictional FCFF valuation: adjust growth/discount/terminal inputs, inspect forecast-year bars, compare authored presets, and see terminal-value dependence. Invalid assumptions show no value.
+- Token allocation: assign exactly 100 fictional teaching tokens; switch among declared one-step shocks and inspect contributions. No normalization, money, performance claim, or recommended mix.
+- Research comparison: choose two existing cases, swap them, compare dated context, and enlarge original workbook figures. Unknown/duplicate selections show an explicit incomplete state.
+
+The model contract and primary conceptual sources are in `FINANCE_LAB.md`. Exact BigInt rational arithmetic is checked against an independent Python Fraction oracle. Phone tabs reflow compactly and bring the selected activity into view; keyboard navigation, reduced motion, source-image failures, and original profile access remain covered.
+
 ## The research desk
 
 `assets/experience-core.mjs` contains the public data maps. `assets/experience.js` handles the interface.

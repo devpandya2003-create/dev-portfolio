@@ -572,7 +572,7 @@
 
   function runCommand(command) {
     closeCommands();
-    if (["selected-work", "leadership", "experience", "capabilities", "research", "foundation", "process", "contact"].includes(command)) {
+    if (["selected-work", "leadership", "finance-lab", "experience", "capabilities", "research", "foundation", "process", "contact"].includes(command)) {
       document.getElementById(command)?.scrollIntoView({ behavior: "auto" });
     } else if (command === "theme") {
       cycleTheme();

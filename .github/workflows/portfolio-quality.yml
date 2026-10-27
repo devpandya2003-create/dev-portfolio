@@ -23,8 +23,15 @@ jobs:
           node --check assets/case.js
           node --check assets/experience.js
           node --check assets/experience-core.mjs
+          node --check assets/finance-lab.js
+          node --check assets/finance-lab-core.mjs
       - name: Validate analyst challenge state machine
         run: node --test scripts/experience-core.test.mjs
+      - name: Verify independent fictional-model oracle
+        run: |
+          python3 scripts/build_lab_oracle.py
+          git diff --exit-code -- scripts/fixtures/finance-lab-oracle.json
+          node --test scripts/finance-lab-core.test.mjs
       - name: Validate public routes and original artifacts
         run: python3 scripts/validate_portfolio.py
       - name: Validate campus roles and project stages
