@@ -42,7 +42,8 @@ for page in PRIMARY:
  for value in set(p.ids):
   if p.ids.count(value)>1:errors.append(f'{page.relative_to(ROOT)} duplicate id: {value}')
  for img in p.images:
-  if not img.get('alt','').strip():errors.append(f'{page.relative_to(ROOT)} image missing alt: {img.get("src")}')
+  decorative=img.get('role')=='presentation' and img.get('aria-hidden')=='true' and 'alt' in img
+  if not img.get('alt','').strip() and not decorative:errors.append(f'{page.relative_to(ROOT)} image missing alt: {img.get("src")}')
  for tag,ref in p.refs:
   target=local_target(page,p.base,ref)
   if target and not target.exists():errors.append(f'{page.relative_to(ROOT)} missing {tag} target: {ref} -> {target.relative_to(ROOT)}')

@@ -11,10 +11,10 @@
       label: "FINANCE & ACCOUNTING / INTERNSHIP",
       status: "JUNE–SEPTEMBER 2026",
       title: "Mattson Technology",
-      copy: "I evaluate customer creditworthiness using Equifax business scores, balance sheets, income statements, and cash flows; analyze production costs, material usage, and overhead allocation; and support month-end close, budget tracking, and internal reporting. I also help streamline recurring finance analysis and reporting through AI-assisted process automation.",
+      copy: "I evaluated customer creditworthiness using Equifax business scores, balance sheets, income statements, and cash flows; analyzed production costs, material usage, and overhead allocation; and supported month-end close, budget tracking, and internal reporting. I also helped streamline recurring finance analysis and reporting through AI-assisted process automation.",
       architecture: ["CREDIT ASSESSMENT", "FINANCIAL REVIEW", "COST & VARIANCE", "REPORTING SUPPORT"],
       facts: [["Location", "Fremont, CA"], ["Function", "Finance + Accounting"], ["Analysis", "Credit + costs"], ["Reporting", "VP of Finance"]],
-      note: "Building practical experience across credit review, financial statements, cost analysis, controls, forecasting, and decision support."
+      note: "Built practical experience across credit review, financial statements, cost analysis, controls, forecasting, and decision support."
     },
     mindox: {
       path: "experience/mindox-techno",
@@ -468,13 +468,15 @@
   };
 
   function applyTheme(mode) {
+    if (!["auto", "dark", "light"].includes(mode)) mode = "auto";
     let resolved = mode;
-    if (mode === "auto") resolved = "dark";
+    if (mode === "auto") resolved = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     root.dataset.theme = resolved;
     root.dataset.themeMode = mode;
     const themeToggle = $("#theme-toggle");
     if (themeToggle) themeToggle.textContent = `Theme: ${mode}`;
-    localStorage.setItem("dev-finance-theme", mode);
+    try { localStorage.setItem("dev-finance-theme", mode); } catch { /* Theme controls work when storage is disabled. */ }
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", resolved === "dark" ? "#101c19" : "#f7f6f2");
   }
 
   function cycleTheme() {
@@ -570,14 +572,19 @@
 
   function runCommand(command) {
     closeCommands();
-    if (["selected-work", "experience", "capabilities", "research", "foundation", "process", "contact"].includes(command)) {
-      document.getElementById(command)?.scrollIntoView({ behavior: "smooth" });
+    if (["selected-work", "leadership", "experience", "capabilities", "research", "foundation", "process", "contact"].includes(command)) {
+      document.getElementById(command)?.scrollIntoView({ behavior: "auto" });
     } else if (command === "theme") {
       cycleTheme();
     }
   }
 
-  applyTheme(localStorage.getItem("dev-finance-theme") || "auto");
+  let savedTheme = "auto";
+  try { savedTheme = localStorage.getItem("dev-finance-theme") || "auto"; } catch { /* Optional browser preference only. */ }
+  applyTheme(savedTheme);
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (root.dataset.themeMode === "auto") applyTheme("auto");
+  });
   $("#theme-toggle")?.addEventListener("click", cycleTheme);
   $$(".project-row").forEach(row => row.addEventListener("click", () => renderProject(row.dataset.project)));
   $$('[data-project-jump]').forEach(link => link.addEventListener('click', () => renderProject(link.dataset.projectJump)));
@@ -592,7 +599,7 @@
   $("#command-open")?.addEventListener("click", openCommands);
   $("#command-close")?.addEventListener("click", closeCommands);
   $$("[data-command]").forEach(button => button.addEventListener("click", () => runCommand(button.dataset.command)));
-  $$('[data-scroll="top"]').forEach(button => button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" })));
+  $$('[data-scroll="top"]').forEach(button => button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "auto" })));
 
   const menuButton = $("#menu-open");
   const mobileNav = $("#mobile-nav");

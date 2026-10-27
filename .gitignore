@@ -1,0 +1,4 @@
+__pycache__/
+*.py[cod]
+/qa-output/
+.DS_Store

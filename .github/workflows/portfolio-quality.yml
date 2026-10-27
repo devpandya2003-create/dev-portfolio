@@ -1,0 +1,27 @@
+name: Portfolio quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the exact commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Validate JavaScript syntax
+        run: |
+          node --check assets/app.js
+          node --check assets/case.js
+      - name: Validate public routes and original artifacts
+        run: python3 scripts/validate_portfolio.py
+      - name: Validate campus roles and project stages
+        run: python3 scripts/test_refresh.py

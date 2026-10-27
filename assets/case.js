@@ -6,11 +6,13 @@
   const mobileNav = document.querySelector("#mobile-nav");
 
   function applyTheme(mode) {
-    const resolved = mode === "auto" ? "dark" : mode;
+    if (!["auto", "dark", "light"].includes(mode)) mode = "auto";
+    const resolved = mode === "auto" ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : mode;
     root.dataset.theme = resolved;
     root.dataset.themeMode = mode;
     if (themeButton) themeButton.textContent = `Theme: ${mode}`;
-    localStorage.setItem("dev-finance-theme", mode);
+    try { localStorage.setItem("dev-finance-theme", mode); } catch { /* Theme controls work when storage is disabled. */ }
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", resolved === "dark" ? "#101c19" : "#f7f6f2");
   }
 
   function cycleTheme() {
@@ -26,7 +28,12 @@
     menuButton.textContent = "Menu";
   }
 
-  applyTheme(localStorage.getItem("dev-finance-theme") || "auto");
+  let savedTheme = "auto";
+  try { savedTheme = localStorage.getItem("dev-finance-theme") || "auto"; } catch { /* Optional browser preference only. */ }
+  applyTheme(savedTheme);
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (root.dataset.themeMode === "auto") applyTheme("auto");
+  });
   themeButton?.addEventListener("click", cycleTheme);
   menuButton?.addEventListener("click", () => {
     if (!mobileNav) return;
@@ -37,7 +44,7 @@
   });
   document.querySelectorAll("#mobile-nav a").forEach(link => link.addEventListener("click", closeMenu));
   document.addEventListener("keydown", event => { if (event.key === "Escape") closeMenu(); });
-  document.querySelectorAll('[data-scroll="top"]').forEach(button => button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" })));
+  document.querySelectorAll('[data-scroll="top"]').forEach(button => button.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "auto" })));
 
   const timeNode = document.querySelector("#local-time");
   const updateTime = () => {
